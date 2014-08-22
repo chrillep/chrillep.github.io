@@ -1,0 +1,314 @@
+<!-- java import -->
+
+
+
+
+
+
+<!-- java import ends-->
+<html>
+<!--
+*******************************************************************************
+* $RCSfile: TimeoutLogin.jsp $
+*******************************************************************************
+* Created On: unknown
+*         By: unknown
+*******************************************************************************
+* Description: None
+*******************************************************************************
+*      Copyright (c) 1997-2001, NETdelivery Corp.  All rights reserved.
+*******************************************************************************
+* $Revision: 1 $
+* $Author: Daca002 $
+*******************************************************************************
+-->
+<!-- Java Code -->
+
+<!-- java code ends-->
+<head>
+	<title>p o s t e n . s e</title>
+	<link rel="stylesheet" type="text/css" href="/HTML/EDS/Posten/se/CSS/Posten.css" src="/HTML/EDS/Posten/se/CSS/Posten.css">
+
+	<SCRIPT LANGUAGE="javascript">
+	// @(#) VSSid $Workfile: shared.js $ $Revision: 4 $ $Modtime: 08-04-30 16:46 $ $Author: Jabr005 $
+	//
+	//This is shared javascript.
+	function composeWin(compurl){
+		var wComposeWin= window.open(compurl,"Compose", "HEIGHT=530,WIDTH=620,resizable=no,scrollbars=yes,menubar=yes");
+		}
+	function helpWin(helpUrl){
+		var wHelpWin= window.open(helpUrl,"help", "HEIGHT=500,WIDTH=570,resizable=no,scrolling=no,menubar=no,toolbar=no,locationbar=no,personalbar=no,statusbar=no");
+		}
+	function rulesWin(rulesUrl){
+		var wRulesWin= window.open(rulesUrl,"rules", "HEIGHT=510,WIDTH=485,resizable=no,scrolling=no,menubar=no,toolbar=no");
+		}
+	function kundtjanstWin(kundtjansturl)
+		{
+		var wComposeWin= window.open(kundtjansturl,"Kundtjanst","toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,topmargin=0,left=200,top=150,height=700,width=900");
+		}
+	/*Input/Submit pass button name */
+	function pass_button_name(param1,param2){
+	var x = param1;
+	var y = param2;
+	document.forms[y].buttonname.name = x;
+	document.forms[y].buttonname.value = x;
+	document.forms[y].submit();
+	}
+/* Functions that handle preload. */
+function MM_preloadImages() { //v3.0
+ var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+   var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+   if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src="/HTML/EDS/Posten/se/Images/" + a[i];}}
+}
+//-->
+
+<!-- hide it
+function clue(s) {
+	window.status = (s ? s : '')
+	return true
+}
+// -->
+
+</SCRIPT>
+
+	<!-- Copyright (c) 1997 - 2001 NETdelivery Corporation. All rights reserved worldwide. -->
+	
+<!-- javascript -->	
+<!-- javascript ends-->
+</head>
+<body bgcolor="#001C43" marginwidth="35" marginheight="0" leftmargin="35" topmargin="0" alink="#001C43"><!-- javascript preload/onload script/ bgcolor (if any ) -->
+<!--topnav.jsp -->
+<!--- Toppbalk --->
+<table border="0" cellpadding="0" cellspacing="0" width="702" height="67">
+	<tr>
+		<td bgcolor="#001C43" width="20"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" width="20"></td>
+		<td align="left"><img src="/HTML/EDS/Posten/se/Images/Masthead/posten_logo_big.gif" border="0"></td>
+		<td align="left"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" border="0" width="23"></td>
+		<td width="110" align="left">
+			<table border="0" cellpadding="0" cellspacing="0" width="110" height="68" align="left">
+				<tr>
+					<td width="110" height="48" align="left" valign="bottom">
+					<img src="/HTML/EDS/Posten/se/Images/Masthead/epostboxen.gif" border="0" width="110">
+					</td>
+				</tr>
+				<tr>
+					<td width="110" height="20" valign="bottom">
+					<img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" border="0" width="110" height="20">
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td width="358" align="right">&nbsp;</td>
+		<td width="123" align="right">
+			<table border="0" cellpadding="0" cellspacing="0" width="123" height="68" align="right">
+				<tr>
+					<td align="right" width="123" height="29" valign="bottom"><a href='javascript:helpWin("/EDS/DisplayHelp?Language=se&AppName=Posten&Page=General/TimeoutLogin.jsp&Suffix=&Extension=html")' onMouseOver="status='Hjälp'; return true;" onMouseOut="status=''"><img src="/HTML/EDS/Posten/se/Images/Masthead/help.gif" border="0" width="41" height"14" alt="Hjälp"></a></td>
+				</tr>
+				<tr>
+					<td width="123" height="10"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" height="10"></td>
+				</tr>
+				<tr>
+					<td align="right" width="123" height="14"><a href="http://www.posten.se/index.jsp" onMouseOver="status='Till Postens startsida'; return true;" onMouseOut="status=''" target="_new"><img src="/HTML/EDS/Posten/se/Images/Masthead/posten_indexpage.gif" border="0" width="123" height"14" alt="Till Postens startsida"></a></td>
+				</tr>
+				<tr>
+					<td width="123" height="15"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" height="15"></td>
+				</tr>
+			</table>
+		</td>
+		<td bgcolor="#001C43" width="15"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" width="15"></td>
+	</tr>
+</table>	
+
+
+<!--topnav.jsp ends-->
+<!-- eSkicka navigation-->
+<table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="702">
+	<tr>
+		<td width="10" height="1" align="left" valign="top"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" alt="" width="1" height="1" border="0"></td>
+		<td width="682" height="1" align="left" valign="top"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="682" height="1" border="0"></td>
+		<td width="10" height="1" align="right" valign="top"><img src="/HTML/EDS/Posten/se/Images/Masthead/morkpix.gif" alt="" width="1" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="1" height="19" border="0"></td>
+	</tr>
+	<tr>
+		<td width="10" height="1"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" height="1" border="0"></td>
+		<td height="1" valign="top"><img src="/HTML/EDS/Posten/se/Images/gra_hori_streck.gif" alt="" width="682" height="1" border="0"></td>
+		<td width="10" height="1"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td width="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" border="0" height="1"></td>
+		<td width="682">
+			<table border="0" cellpadding="0" cellspacing="0" width="682">
+				<tr>
+					<td height="17"><img src="/HTML/EDS/Posten/se/Images/gra_vert_streck.gif" alt="" width="1" height="17" border="0"></td>
+					<td width="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" height="1" border="0"></td>
+					<td width="670" height="17" class="linenav">ePostboxen</td>
+					<td height="17"><img src="/HTML/EDS/Posten/se/Images/gra_vert_streck.gif" alt="" width="1" height="17" border="0"></td>
+				</tr>
+			</table>
+		</td>
+		<td width="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" height="1" border="0"></td>
+	</tr>
+	<tr>
+		<td width="10" height="1"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" border="0" height="1"></td>
+		<td height="1" valign="top"><img src="/HTML/EDS/Posten/se/Images/gra_hori_streck.gif" alt="" width="682" height="1" border="0"></td>
+		<td width="10" height="1"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10" border="0" height="1"></td>
+	</tr>
+	<tr>
+		<td colspan="3" valign="top"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="20" border="0"></td>
+	</tr>
+</table>
+
+<!-- eSkicka navigation ends-->
+<!-- body-->
+<table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="702">
+	<tr>
+		<td width="151" valign="top">
+		<!--lefthandnavigation include-->
+		<table border="0" cellpadding="0" cellspacing="0" width="151" valign="top">
+			<tr>
+				<td width="20"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="20"></td>
+				<td class="linenav" width="111">&nbsp;</td>
+				<td width="20"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="20"></td>
+			</tr>	
+		</table>
+		<!--lefthandnavigation include ends-->				
+		</td>	
+		<td bgcolor="#999999" width="1" valign="top"><img src="/HTML/EDS/Posten/se/Images/gra.gif" alt="" width="1" height="335"></td>
+		<td width="20" valign="top"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="20"></td>
+		<td width="520" valign="top">
+		<!--application area-->
+			<table border="0" cellpadding="0" cellspacing="0" width="520" valign="top">
+				<tr><td height="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="10"></td></tr>
+				<tr>
+					<td><img src="/HTML/EDS/Posten/se/Images/Headers/time_out.gif" height="26" width="84" alt="Time out"></td>
+				</tr>
+				<tr><td height="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="10"></td></tr>
+				<tr>
+					<td>
+					<!--data enry -->
+	<table border="0" cellpadding="0" cellspacing="0" width="520">
+<form method="post" autocomplete="off">
+<input type="hidden" notab name="AuthenticationPage" value="true" />
+<input type="hidden" notab name="Language" value="se">
+<input type="hidden" notab name="AppName" value="Posten">
+<input type="hidden" name="hints" value="1">
+<input type="hidden" name="TargetPath" value="null">
+<input type="hidden" name="TargetRequestMethod" value="null">
+<input type="hidden" name="Retry" value="null">
+<input type="hidden" name="LoginType" value="Timeout">
+<input type="hidden" name="buttonname" value="">
+			
+			<!-- Custom Attributes -->
+			
+				<!-- Request -->
+			
+<input type="hidden" name="hints" value="1">
+			
+<input type="hidden" name="fullApp" value="1">
+			
+<input type="hidden" name="mailSummaryId" value="null">
+			
+<input type="hidden" name="resize" value="true">
+			
+			<!-- End Custom Attributes -->
+				
+	<tr>
+		<td valign="top">
+			<table border="0" cellpadding="0" cellspacing="0" width="350" align="left" valign="top">
+				<tr>
+					<td>
+					<font class="hint">
+
+					Du har inte använt systemet på minst 15 minuter. Skriv in ditt användarnamn och lösenord igen och klicka på <b>OK</b> om du vill fortsätta använda ePostboxen.
+									</font>
+					</td>
+				</tr>	
+			</table>
+		</td>
+	</tr> 
+
+
+				
+
+				<tr>
+					<td height="20"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="20"></td>
+				</tr>
+				<tr>
+					<td align="left">Användarnamn:&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="4"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="4"></td>
+				</tr>				
+				<tr>
+					<td align="left"><input tabindex="1" type="text" class="indata" size="20" name="EBoxName" value="" maxlength="32" ></td>
+				</tr>
+				<tr>
+					<td height="12"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="12"></td>
+				</tr>
+				<tr>
+					<td align="left">Lösenord:&nbsp;</td>
+				</tr>
+				<tr>
+					<td height="4"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="4"></td>
+				</tr>
+				<tr>
+					<td align="left"><input tabindex="2" type="password" class="indata" size="20" name="EBoxPassword" maxlength="32" ></td>
+				</tr>
+				<tr><td height="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" height="10"></td></tr>
+				<tr>
+					<td align="left"><a tabindex="3" href="javascript:pass_button_name('Login','0');" onMouseOver="status='Logga in'; return true;" onMouseOut="status=''"><img src="/HTML/EDS/Posten/se/Images/Buttons/ok.gif" alt="OK" border="0"></a><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="20" height="1"><a tabindex="4" href="javascript:void(0);" onClick="self.close()" onMouseOver="status='Avbryt'; return true;" onMouseOut="status=''"><img src="/HTML/EDS/Posten/se/Images/Buttons/cancel.gif" alt="Avbryt" border="0"></a></td>
+				</tr>
+			</table>
+				<!--data enry ends -->				
+						</td>
+					</tr>
+				</table>
+		<!--application area ends-->			
+				</td>
+	<td width="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" alt="" width="10"></td>
+	</tr>
+</table>
+<!-- body ends-->
+<table border="0" bgcolor="#ffffff" width="702" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+		<!--footer.jsp -->
+		<table border="0" bgcolor="#ffffff" cellpadding="0" cellspacing="0" width="702">
+	<tr>
+		<td colspan="3" bgcolor="#FFFFFF" height="10"><img src="/HTML/EDS/Posten/se/Images/clear.gif" border="0" height="10"></td>
+	</tr>
+	<tr>
+		<td><img src="/HTML/EDS/Posten/se/Images/Bottomnav/toppen-to_the_top1.gif" border="0"></td>
+		<td><a href="#top" onMouseOver="status='Till toppen';return true;" onMouseOut="status=''"><img src="/HTML/EDS/Posten/se/Images/Bottomnav/toppen-to_the_top2.gif" border="0" alt="<ndlang><en>To Top</en><se>Till toppen</se></ndlang>"></a></td>
+		<td align="right"><img src="/HTML/EDS/Posten/se/Images/Bottomnav/footer_right.gif" border="0" width="512"></td>
+	</tr>
+</table>
+		
+		<!--footer.jsp ends-->
+		</td>
+	</tr>	
+</table>
+<br>
+<!--additional.jsp-->
+<!--
+*******************************************************************************
+* $RCSfile: additional.jsp $
+*******************************************************************************
+* Created On: unknown
+*         By: unknown
+*******************************************************************************
+* Description: None
+*******************************************************************************
+*      Copyright (c) 1997-2001, NETdelivery Corp.  All rights reserved.
+*******************************************************************************
+* $Revision: 1 $
+* $Author: Daca002 $
+*******************************************************************************
+-->
+
+
+
+</body>
+</html>
