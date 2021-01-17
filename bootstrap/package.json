@@ -18,7 +18,7 @@
   ]
   , "devDependencies": {
       "uglify-js": "3.12.4"
-    , "jshint": "0.9.1"
+    , "jshint": "2.12.0"
     , "recess": "1.1.9"
     , "connect": "3.7.0"
     , "hogan.js": "3.0.2"
