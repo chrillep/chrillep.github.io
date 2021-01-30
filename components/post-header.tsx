@@ -1,5 +1,5 @@
 import Avatar from '../components/avatar'
-import DateFormatter from '../components/date-formatter'
+import DateFormatter from './date-formatter'
 import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
 
