@@ -2,6 +2,7 @@ import Avatar from '../components/avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from '../components/cover-image'
 import PostTitle from '../components/post-title'
+import React from 'react'
 
 export default function PostHeader({ title, coverImage, date, author }) {
   return (
