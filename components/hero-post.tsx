@@ -2,6 +2,7 @@ import Avatar from '../components/avatar'
 import DateFormatter from './date-formatter'
 import CoverImage from '../components/cover-image'
 import Link from 'next/link'
+import React from 'react'
 
 export default function HeroPost({
   title,
