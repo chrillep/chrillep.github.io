@@ -22,7 +22,7 @@
   "pre-commit": "lint-staged",
   "dependencies": {
     "classnames": "2.2.6",
-    "date-fns": "2.16.1",
+    "date-fns": "2.22.1",
     "gray-matter": "4.0.2",
     "next": "10.0.6",
     "react": "17.0.2",
