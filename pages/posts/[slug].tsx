@@ -12,7 +12,20 @@ import { CMS_NAME } from '../../lib/constants'
 import markdownToHtml from '../../lib/markdownToHtml'
 import React from 'react'
 
-export default function Post({ post, morePosts, preview }) {
+type Props = {
+  post?: {
+    title?: string
+    date?: string
+    slug?: string
+    author?: string
+    content?: string
+    ogImage?: string
+    coverImage?: string
+  }
+  morePosts?: string
+  preview?: string
+}
+export default function Post({ post, morePosts, preview }: Props) {
   const router = useRouter()
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
@@ -57,6 +70,7 @@ export async function getStaticProps({ params }) {
     'ogImage',
     'coverImage',
   ])
+
   const content = await markdownToHtml(post.content || '')
 
   return {

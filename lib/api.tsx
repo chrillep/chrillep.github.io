@@ -2,13 +2,24 @@ import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
 
+type Props = {
+  post?: {
+    title?: string
+    date?: string
+    slug?: string
+    author?: string
+    content?: string
+    ogImage?: string
+    coverImage?: string
+  }
+}
 const postsDirectory = join(process.cwd(), '_posts')
 
 export function getPostSlugs() {
   return fs.readdirSync(postsDirectory)
 }
 
-export function getPostBySlug(slug, fields = []) {
+export function getPostBySlug(slug, fields = []): Props['post'] {
   const realSlug = slug.replace(/\.md$/, '')
   const fullPath = join(postsDirectory, `${realSlug}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
