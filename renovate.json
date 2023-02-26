@@ -3,7 +3,7 @@
   "extends": [
     "config:base",
     ":automergeMajor",
-    "pinAllExceptPeerDependencies",
+    "pinAllExceptPeerDependencies"
   ],
   "labels": ["dependencies"],
   "packageRules": [
