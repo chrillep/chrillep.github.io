@@ -1,11 +1,10 @@
-import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import type {NextPage} from 'next';
-import * as React from 'react';
-import Copyright from '../components/Copyright';
-import Link from '../components/Link';
-import ProTip from '../components/ProTip';
+import Box from '@mui/material/Box'
+import Container from '@mui/material/Container'
+import Typography from '@mui/material/Typography'
+import type { NextPage } from 'next'
+import * as React from 'react'
+import Link from '../components/Link'
+import ProTip from '../components/ProTip'
 
 const Home: NextPage = () => {
     return (
@@ -25,11 +24,13 @@ const Home: NextPage = () => {
                 <Link href="/about" color="secondary">
                     Go to the about page
                 </Link>
+                <Link href="/me" color="secondary">
+                    Go to the me page
+                </Link>
                 <ProTip />
-                <Copyright />
             </Box>
         </Container>
-    );
-};
+    )
+}
 
-export default Home;
+export default Home
