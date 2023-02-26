@@ -16,8 +16,8 @@ importers:
     specifiers:
       '@babel/core': 7.21.0
       '@types/node': 18.14.2
-      '@types/react': ^18.0.22
-      '@types/react-dom': ^18.0.7
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       eslint: 8.35.0
       eslint-config-custom: workspace:*
       next: 13.2.1
@@ -88,8 +88,8 @@ importers:
     specifiers:
       '@babel/core': 7.21.0
       '@types/node': 18.14.2
-      '@types/react': ^18.0.22
-      '@types/react-dom': ^18.0.7
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       database: workspace:*
       eslint: 8.35.0
       eslint-config-custom: workspace:*
@@ -150,8 +150,8 @@ importers:
 
   packages/ui:
     specifiers:
-      '@types/react': ^18.0.17
-      '@types/react-dom': ^18.0.6
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
       eslint: 8.35.0
       eslint-config-custom: workspace:*
       react: 18.2.0
