@@ -10,8 +10,7 @@ import twitterPic from '../../public/assets/images/Twitter-logo.svg'
 
 const Me: NextPage = () => {
     const imageSize = 200
-    const imageUrl =
-        `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
+    const imageUrl = `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
     return (
         <Container id="wrapper" className="container" maxWidth="lg">
             <Box
@@ -215,15 +214,15 @@ const Me: NextPage = () => {
                                                 data-show-count="false"
                                                 data-lang="sv"
                                             >
-                                             <span>
-                                                <Image
-                                                    src={twitterPic}
-                                                    width="20"
-                                                    height="20"
-                                                    alt="Följ @Chrillep på Twitter"
-                                                />
-                                                Följ @Chrillep
-                                             </span>
+                                                <span>
+                                                    <Image
+                                                        src={twitterPic}
+                                                        width="20"
+                                                        height="20"
+                                                        alt="Följ @Chrillep på Twitter"
+                                                    />
+                                                    Följ @Chrillep
+                                                </span>
                                             </a>
                                         </td>
                                     </tr>
