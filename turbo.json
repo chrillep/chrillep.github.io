@@ -17,12 +17,17 @@
       ]
     },
     "test": {
+      "outputs": ["coverage/**"],
       "dependsOn": ["^build"]
     },
     "lint": {
       "outputs": []
     },
     "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "clean": {
       "cache": false
     }
   }
