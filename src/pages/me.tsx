@@ -4,6 +4,9 @@ import type { NextPage } from 'next'
 import Image from 'next/image'
 import * as React from 'react'
 import ProTip from '../components/ProTip'
+import linkedInPic from '../../public/assets/images/LinkedIn_icon.svg'
+import facebookPic from '../../public/assets/images/Facebook_Logo_(2019).png'
+import twitterPic from '../../public/assets/images/Twitter-logo.svg'
 
 const Me: NextPage = () => {
     const imageSize = 200
@@ -173,7 +176,7 @@ const Me: NextPage = () => {
                                                 rel="noreferrer"
                                             >
                                                 <Image
-                                                    src="https://www.linkedin.com/img/webpromo/btn_in_20x15.png"
+                                                    src={linkedInPic}
                                                     width="20"
                                                     height="15"
                                                     alt="Visa Christian Widlunds profil på LinkedIn"
@@ -192,9 +195,9 @@ const Me: NextPage = () => {
                                             >
                                                 <span>
                                                     <Image
-                                                        src="https://s-static.ak.facebook.com/rsrc.php/yP/r/Ivn-CVe5TGK.ico"
+                                                        src={facebookPic}
                                                         width="20"
-                                                        height="15"
+                                                        height="20"
                                                         alt="Visa Christian Widlunds profil på Facebook"
                                                     />
                                                     Visa Christian Widlunds
@@ -212,7 +215,15 @@ const Me: NextPage = () => {
                                                 data-show-count="false"
                                                 data-lang="sv"
                                             >
+                                             <span>
+                                                <Image
+                                                    src={twitterPic}
+                                                    width="20"
+                                                    height="20"
+                                                    alt="Följ @Chrillep på Twitter"
+                                                />
                                                 Följ @Chrillep
+                                             </span>
                                             </a>
                                         </td>
                                     </tr>
