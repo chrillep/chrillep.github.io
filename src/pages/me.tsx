@@ -7,8 +7,7 @@ import ProTip from '../components/ProTip'
 
 const Me: NextPage = () => {
     const imageSize = 200
-    const imageUrl =
-        `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
+    const imageUrl = `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
     return (
         <Container id="wrapper" className="container" maxWidth="lg">
             <Box

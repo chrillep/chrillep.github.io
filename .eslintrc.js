@@ -1,17 +1,17 @@
 module.exports = {
-    "extends": [
-        "eslint:recommended",
-        "next",
-        "next/core-web-vitals",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "prettier"
+    extends: [
+        'eslint:recommended',
+        'next',
+        'next/core-web-vitals',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'prettier',
     ],
-    "plugins": ["@typescript-eslint"],
+    plugins: ['@typescript-eslint'],
     parser: '@typescript-eslint/parser',
-    "parserOptions": {
-        "project": true,
-        "tsconfigRootDir": __dirname,
+    parserOptions: {
+        project: true,
+        tsconfigRootDir: __dirname,
     },
     root: true,
 }

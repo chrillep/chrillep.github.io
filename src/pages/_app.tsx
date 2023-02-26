@@ -8,10 +8,10 @@ import createEmotionCache from '../helpers/createEmotionCache'
 import Layout from '../components/Layout'
 
 // Client-side cache, shared for the whole session of the user in the browser.
-const clientSideEmotionCache = createEmotionCache();
+const clientSideEmotionCache = createEmotionCache()
 
 interface MyAppProps extends AppProps {
-    emotionCache?: EmotionCache;
+    emotionCache?: EmotionCache
 }
 
 export default function MyApp(props: MyAppProps) {
@@ -20,12 +20,15 @@ export default function MyApp(props: MyAppProps) {
         Component,
         emotionCache = clientSideEmotionCache,
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-        pageProps
-    } = props;
+        pageProps,
+    } = props
     return (
         <CacheProvider value={emotionCache}>
             <Head>
-                <meta name="viewport" content="initial-scale=1, width=device-width" />
+                <meta
+                    name="viewport"
+                    content="initial-scale=1, width=device-width"
+                />
             </Head>
             <CssVarsProvider>
                 {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
@@ -35,5 +38,5 @@ export default function MyApp(props: MyAppProps) {
                 </Layout>
             </CssVarsProvider>
         </CacheProvider>
-    );
+    )
 }
