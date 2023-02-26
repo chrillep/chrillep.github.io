@@ -8,8 +8,7 @@ import ProTip from '../components/ProTip'
 const Me: NextPage = () => {
     const imageSize = 200
     const imageUrl =
-        'https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=' +
-        imageSize
+        `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
     return (
         <Container id="wrapper" className="container" maxWidth="lg">
             <Box
@@ -173,7 +172,7 @@ const Me: NextPage = () => {
                                                 target="_blank"
                                                 rel="noreferrer"
                                             >
-                                                <img
+                                                <Image
                                                     src="https://www.linkedin.com/img/webpromo/btn_in_20x15.png"
                                                     width="20"
                                                     height="15"
@@ -192,7 +191,7 @@ const Me: NextPage = () => {
                                                 rel="noreferrer"
                                             >
                                                 <span>
-                                                    <img
+                                                    <Image
                                                         src="https://s-static.ak.facebook.com/rsrc.php/yP/r/Ivn-CVe5TGK.ico"
                                                         width="20"
                                                         height="15"

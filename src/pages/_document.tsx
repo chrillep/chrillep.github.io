@@ -64,10 +64,12 @@ MyDocument.getInitialProps = async (ctx: DocumentContext) => {
     // You can consider sharing the same Emotion cache between all the SSR requests to speed up performance.
     // However, be aware that it can have global side effects.
     const cache = createEmotionCache();
+    // eslint-disable-next-line @typescript-eslint/unbound-method
     const { extractCriticalToChunks } = createEmotionServer(cache);
 
     ctx.renderPage = () =>
         originalRenderPage({
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             enhanceApp: (App: any) =>
                 function EnhanceApp(props) {
                     return <App emotionCache={cache} {...props} />;
