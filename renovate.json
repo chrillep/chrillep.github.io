@@ -2,10 +2,9 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base",
-    ":automerge"
+    ":automergeMajor"
   ],
   "labels": ["dependencies"],
-  "prConcurrentLimit": 2,
   "packageRules": [
     {
       "matchDatasources": ["docker"],
