@@ -13,7 +13,10 @@
     },
     {
       "matchManagers": ["composer"],
-      "addLabels": ["php", "composer"]
+      "addLabels": [
+        "php",
+        "composer"
+      ]
     },
     {
       "matchUpdateTypes": ["major"],
@@ -29,6 +32,9 @@
     }
   ],
   "js": {
-    "addLabels": ["js", "javascript"]
+    "addLabels": [
+      "js",
+      "javascript"
+    ]
   }
 }
