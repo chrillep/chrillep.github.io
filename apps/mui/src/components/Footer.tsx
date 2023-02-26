@@ -1,6 +1,6 @@
 import Container from '@mui/material/Container'
 import * as React from 'react'
-import Copyright from '../components/Copyright'
+import Copyright from './Copyright'
 
 const Footer = () => {
     return (

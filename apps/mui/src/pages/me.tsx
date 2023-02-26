@@ -48,7 +48,7 @@ const Me: NextPage = () => {
                                     <ol>
                                         <li>
                                             <a
-                                                href="#personuppgifter"
+                                                href="apps/mui/src/pages#personuppgifter"
                                                 className="toggler"
                                             >
                                                 Personuppgifter
@@ -56,7 +56,7 @@ const Me: NextPage = () => {
                                         </li>
                                         <li>
                                             <a
-                                                href="#presentation"
+                                                href="apps/mui/src/pages#presentation"
                                                 className="toggler"
                                             >
                                                 Presentation
@@ -64,7 +64,7 @@ const Me: NextPage = () => {
                                         </li>
                                         <li>
                                             <a
-                                                href="#utbildningar"
+                                                href="apps/mui/src/pages#utbildningar"
                                                 className="toggler"
                                             >
                                                 Utbildningar
@@ -72,7 +72,7 @@ const Me: NextPage = () => {
                                         </li>
                                         <li>
                                             <a
-                                                href="#anstallningar"
+                                                href="apps/mui/src/pages#anstallningar"
                                                 className="toggler"
                                             >
                                                 Anställningar
@@ -80,7 +80,7 @@ const Me: NextPage = () => {
                                         </li>
                                         <li>
                                             <a
-                                                href="#ovriga"
+                                                href="apps/mui/src/pages#ovriga"
                                                 className="toggler"
                                             >
                                                 {' '}
@@ -101,7 +101,7 @@ const Me: NextPage = () => {
                         </legend>
                         <a
                             className="aright toggler heading plus"
-                            href="#Personuppgifter"
+                            href="apps/mui/src/pages#Personuppgifter"
                         >
                             [+]
                         </a>
@@ -240,7 +240,7 @@ const Me: NextPage = () => {
 
                         <a
                             className="aright toggler heading plus"
-                            href="#Personuppgifter"
+                            href="apps/mui/src/pages#Personuppgifter"
                         >
                             [+]
                         </a>
@@ -320,7 +320,7 @@ const Me: NextPage = () => {
                         </legend>
                         <a
                             className="aright toggler heading plus"
-                            href="#Personuppgifter"
+                            href="apps/mui/src/pages#Personuppgifter"
                         >
                             [+]
                         </a>
@@ -377,7 +377,7 @@ const Me: NextPage = () => {
                         </legend>
                         <a
                             className="aright toggler heading plus"
-                            href="#Personuppgifter"
+                            href="apps/mui/src/pages#Personuppgifter"
                         >
                             [+]
                         </a>
@@ -535,7 +535,7 @@ const Me: NextPage = () => {
                         </legend>
                         <a
                             className="aright toggler heading plus"
-                            href="#Personuppgifter"
+                            href="apps/mui/src/pages#Personuppgifter"
                         >
                             [+]
                         </a>

@@ -1,6 +1,6 @@
 import * as React from 'react'
-import ButtonAppBar from '../components/ButtonAppBar'
-import Footer from '../components/Footer'
+import ButtonAppBar from './ButtonAppBar'
+import Footer from './Footer'
 
 type Props = {
     preview?: boolean
