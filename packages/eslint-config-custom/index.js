@@ -5,7 +5,8 @@ module.exports = {
     "next/core-web-vitals",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
-    "prettier"
+    "prettier",
+    "turbo",
   ],
   rules: {
     "@next/next/no-html-link-for-pages": "off",
