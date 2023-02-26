@@ -29,6 +29,6 @@
     }
   ],
   "js": {
-    "addLabels": ["yarn"]
+    "addLabels": ["js", "javascript"]
   }
 }
