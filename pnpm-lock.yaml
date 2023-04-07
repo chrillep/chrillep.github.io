@@ -19,7 +19,7 @@ importers:
   apps/docs:
     specifiers:
       '@babel/core': 7.21.4
-      '@types/node': 18.15.0
+      '@types/node': 18.15.11
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       eslint: 8.36.0
@@ -37,7 +37,7 @@ importers:
       ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.21.4
-      '@types/node': 18.15.0
+      '@types/node': 18.15.11
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       eslint: 8.36.0
@@ -91,7 +91,7 @@ importers:
   apps/web:
     specifiers:
       '@babel/core': 7.21.4
-      '@types/node': 18.15.0
+      '@types/node': 18.15.11
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       database: workspace:*
@@ -111,7 +111,7 @@ importers:
       ui: link:../../packages/ui
     devDependencies:
       '@babel/core': 7.21.4
-      '@types/node': 18.15.0
+      '@types/node': 18.15.11
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       eslint: 8.36.0
@@ -3996,10 +3996,6 @@ packages:
 
   /@types/node/16.18.13:
     resolution: {integrity: sha512-l0/3XZ153UTlNOnZK8xSNoJlQda9/WnYgiTdcKKPJSZjdjI9MU+A9oMXOesAWLSnqAaaJhj3qfQsU07Dr8OUwg==}
-    dev: true
-
-  /@types/node/18.15.0:
-    resolution: {integrity: sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==}
     dev: true
 
   /@types/node/18.15.11:
