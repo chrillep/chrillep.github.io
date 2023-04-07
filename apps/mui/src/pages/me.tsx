@@ -347,11 +347,11 @@ const Me: NextPage<MeProps> = (props) => {
                                     <td>Hemsida:</td>
                                     <td>
                                         <a
-                                            href="http://hptftw.ath.cx/cv"
+                                            href="https://hptftw.ath.cx/cv"
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            http://hptftw.ath.cx/cv
+                                            https://hptftw.ath.cx/cv
                                         </a>
                                     </td>
                                 </tr>
@@ -441,11 +441,11 @@ const Me: NextPage<MeProps> = (props) => {
                                 <span className="namn">christian widlund</span>{' '}
                                 och bor sedan 7 år i Stockholm. Har precis
                                 avslutat min studier inom{' '}
-                                <a href="http://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">
+                                <a href="https://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">
                                     Webbapplikationsutveckling
                                 </a>{' '}
                                 på{' '}
-                                <a href="http://jenseneducation.se/">
+                                <a href="https://jenseneducation.se/">
                                     JENSEN education.
                                 </a>
                                 Har sedan en tidig ålder haft ett gediget
@@ -579,7 +579,7 @@ const Me: NextPage<MeProps> = (props) => {
                                 <ul>
                                     <li className="unstyled">
                                         <h4>
-                                            <a href="http://www.vulkanmedia.se">
+                                            <a href="https://www.vulkanmedia.se">
                                                 Vulkanmedia.se
                                             </a>
                                         </h4>
@@ -615,11 +615,11 @@ const Me: NextPage<MeProps> = (props) => {
                                     </ul>
                                     <li className="nej">
                                         <h4>
-                                            <a href="http://www.mobillan.se">
+                                            <a href="https://www.mobillan.se">
                                                 Mobillan.se
                                             </a>{' '}
                                             /{' '}
-                                            <a href="http://www.nettofinans.se">
+                                            <a href="https://www.nettofinans.se">
                                                 Nettofinans.se
                                             </a>
                                         </h4>
@@ -740,7 +740,7 @@ const Me: NextPage<MeProps> = (props) => {
                                     <li>
                                         Beskrivning: Gjorde lumpen i 7,5 halv
                                         månad i Östersund på{' '}
-                                        <a href="http://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">
+                                        <a href="https://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">
                                             I5
                                         </a>
                                         . Har 10/8/8 i betyg och cerifikat i
