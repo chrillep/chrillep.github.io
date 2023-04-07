@@ -198,8 +198,8 @@ importers:
         specifier: 7.0.2
         version: 7.0.2(react-dom@18.2.0)(react@18.2.0)(typescript@5.0.3)(vite@4.2.1)
       '@storybook/testing-library':
-        specifier: 0.0.14-next.1
-        version: 0.0.14-next.1
+        specifier: 0.1.0
+        version: 0.1.0
       '@types/react':
         specifier: 18.0.33
         version: 18.0.33
@@ -3636,8 +3636,8 @@ packages:
       - supports-color
     dev: true
 
-  /@storybook/testing-library@0.0.14-next.1:
-    resolution: {integrity: sha512-1CAl40IKIhcPaCC4pYCG0b9IiYNymktfV/jTrX7ctquRY3akaN7f4A1SippVHosksft0M+rQTFE0ccfWW581fw==}
+  /@storybook/testing-library@0.1.0:
+    resolution: {integrity: sha512-g947f4LJZw3IluBhysMKLJXByAFiSxnGuooENqU+ZPt/GTrz1I9GDBlhmoTJahuFkVbwHvziAl/8riY2Re921g==}
     dependencies:
       '@storybook/client-logger': 7.0.2
       '@storybook/instrumenter': 7.0.2
