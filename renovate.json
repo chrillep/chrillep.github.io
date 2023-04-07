@@ -26,6 +26,10 @@
         {
             "matchUpdateTypes": ["patch"],
             "addLabels": ["patch"]
+        },
+        {
+          "groupName": "Storybook Testing",
+          "matchPackagePrefixes": ["@storybook/"]
         }
     ],
     "js": {

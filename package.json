@@ -19,14 +19,14 @@
   },
   "devDependencies": {
     "eslint-config-custom": "workspace:*",
-    "prettier": "2.8.4",
+    "prettier": "2.8.7",
     "turbo": "latest",
-    "@changesets/cli": "2.26.0",
-    "eslint": "8.35.0"
+    "@changesets/cli": "2.26.1",
+    "eslint": "8.37.0"
   },
   "engines": {
     "node": ">=18.0.0"
   },
   "dependencies": {},
-  "packageManager": "pnpm@7.28.0"
+  "packageManager": "pnpm@8.1.1"
 }
