@@ -19,9 +19,11 @@ export type Item = {
     type: string
     title?: string
     description: string
+    ingress?: string
+    paragraphs?: string[]
     bgImage?: string|any
     image: string
-    list: List
+    list?: List
 }
 export type Items = Item[]
 
@@ -65,7 +67,16 @@ const body = <Items>[
                 {title: 'GitHub', value: 'Visa Chrillep på GitHubVisa Chrillep', link: 'https://github.com/chrillep'},
             ],
         }
-    }]
+    },{
+        type: 'subHeader',
+        title: 'Presentation',
+        description: 'description',
+        ingress: '',
+        paragraphs: [
+            'Jag heter <span className="namn"> christian widlund</span> och bor sedan 7 år i Stockholm. Har precis avslutat min studier inom<a href="https://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">Webbapplikationsutveckling</a> på <a href="https://jenseneducation.se/">JENSEN education.</a> Har sedan en tidig ålder haft ett gediget intresse för teknik och datorer. Jag studerade därmed media med rörlig bild och ljud som fokus. På fritiden tog jag isär och plockade ihop datorer. Lärde mig snabbt att hantera mjuk samt hårdvara. Flyttade senare ner till Stockholm för att skaffa mig ett jobb.inte så snart så fick jag ett jobb hos ett rekryteringsföretag och genom det jobb på <abbr title="Stort dataföretag">DELL</abbr>.',
+            ''],
+    }
+]
 
 export function getData() {
     return <Items>body

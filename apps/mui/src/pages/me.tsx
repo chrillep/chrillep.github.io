@@ -272,7 +272,7 @@ const Me: NextPage<MeProps> = (props) => {
                                                 href="apps/mui/src/pages#ovriga"
                                                 className="toggler"
                                             >
-                                                {' '}
+
                                                 Övriga meriter
                                             </a>
                                         </li>
@@ -309,16 +309,13 @@ const Me: NextPage<MeProps> = (props) => {
                                 <tr>
                                     <td>Telefon:</td>
                                     <td>
-                                        <a href="callto:0702478607">
-                                            0702478607
-                                        </a>
+                                        <a href="callto:0702478607">0702478607</a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Utdelningsadress:</td>
                                     <td>
                                         <address>
-                                            {' '}
                                             Kristallvägen 174
                                         </address>
                                     </td>
@@ -437,17 +434,10 @@ const Me: NextPage<MeProps> = (props) => {
                         <Box id="presentation" className="content">
                             <hr />
                             <p>
-                                Jag heter{' '}
-                                <span className="namn">christian widlund</span>{' '}
-                                och bor sedan 7 år i Stockholm. Har precis
-                                avslutat min studier inom{' '}
-                                <a href="https://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">
-                                    Webbapplikationsutveckling
-                                </a>{' '}
-                                på{' '}
-                                <a href="https://jenseneducation.se/">
-                                    JENSEN education.
-                                </a>
+                                Jag heter<span className="namn">christian widlund</span> och bor sedan 7 år i Stockholm. Har precis avslutat min studier inom
+                                <a href="https://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">Webbapplikationsutveckling</a>
+                                på
+                                <a href="https://jenseneducation.se/">JENSEN education.</a>
                                 Har sedan en tidig ålder haft ett gediget
                                 intresse för teknik och datorer. Jag studerade
                                 därmed media med rörlig bild och ljud som fokus.
@@ -456,7 +446,7 @@ const Me: NextPage<MeProps> = (props) => {
                                 hårdvara. Flyttade senare ner till Stockholm för
                                 att skaffa mig ett jobb.inte så snart så fick
                                 jag ett jobb hos ett rekryteringsföretag och
-                                genom det jobb på{' '}
+                                genom det jobb på
                                 <abbr title="Stort dataföretag">DELL</abbr>.
                             </p>
                             <p>
@@ -486,15 +476,10 @@ const Me: NextPage<MeProps> = (props) => {
                                 eller webbprogramering. Jag kom in på
                                 webbapplikationsutvecklingsprogramet hos JENSEN
                                 education, under studietiden har jag praktiserat
-                                på <a href="www.mobillan.se">www.mobillan.se</a>
-                                ,{' '}
-                                <a href="www.nettofinans.se">
-                                    www.nettofinans.se
-                                </a>{' '}
-                                och{' '}
-                                <a href="www.vulkanmedia.se">
-                                    www.vulkanmedia.se
-                                </a>{' '}
+                                på <a href="www.mobillan.se">www.mobillan.se</a>,
+                                <a href="www.nettofinans.se">www.nettofinans.se</a>
+                                och
+                                <a href="www.vulkanmedia.se">www.vulkanmedia.se</a>
                                 som jag varit med från start till sjösättning.
                                 Nu ser jag fram emot nya utmaningar.
                             </p>
@@ -617,8 +602,8 @@ const Me: NextPage<MeProps> = (props) => {
                                         <h4>
                                             <a href="https://www.mobillan.se">
                                                 Mobillan.se
-                                            </a>{' '}
-                                            /{' '}
+                                            </a>
+                                            /
                                             <a href="https://www.nettofinans.se">
                                                 Nettofinans.se
                                             </a>
@@ -739,10 +724,8 @@ const Me: NextPage<MeProps> = (props) => {
                                     <li>Tidsperiod: 2003 - 2004</li>
                                     <li>
                                         Beskrivning: Gjorde lumpen i 7,5 halv
-                                        månad i Östersund på{' '}
-                                        <a href="https://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">
-                                            I5
-                                        </a>
+                                        månad i Östersund på
+                                        <a href="https://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">I5</a>
                                         . Har 10/8/8 i betyg och cerifikat i
                                         vinteröverlevnad
                                     </li>
