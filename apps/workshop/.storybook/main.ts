@@ -1,4 +1,5 @@
 import type { StorybookConfig } from '@storybook/react-vite'
+
 const config: StorybookConfig = {
     stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|ts|tsx)'],
     addons: [
@@ -8,9 +9,14 @@ const config: StorybookConfig = {
         '@storybook/addon-storysource',
         '@storybook/addon-a11y',
         '@storybook/addon-coverage',
-        'storybook-addon-pseudo-states',
         'storybook-mobile',
         '@storybook/addon-jest',
+        {
+            name: '@storybook/addon-styling',
+            options: {
+                postCss: true,
+            },
+        },
     ],
     framework: {
         name: '@storybook/react-vite',
