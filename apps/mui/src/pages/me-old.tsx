@@ -7,212 +7,23 @@ import ProTip from '../components/ProTip'
 import linkedInPic from '../../public/assets/images/LinkedIn_icon.svg'
 import facebookPic from '../../public/assets/images/Facebook_Logo_(2019).png'
 import twitterPic from '../../public/assets/images/Twitter-logo.svg'
-import profileBgPic from '../../public/assets/images/profile_bg.jpeg'
-import ImageIcon from '@mui/icons-material/Image';
-import WorkIcon from '@mui/icons-material/Work';
-import BeachAccessIcon from '@mui/icons-material/BeachAccess';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
-import {
-    Avatar,
-    Button,
-    Card,
-    CardActions,
-    CardContent,
-    CardMedia, Divider, List, ListItem,
-    ListItemAvatar, ListItemIcon,
-    ListItemText, MenuItem, MenuList,
-    Typography,
-} from '@mui/material'
-import { Cloud, ContentCopy, ContentCut, ContentPaste } from '@mui/icons-material'
-import { Items, getData, Item } from './api/me'
-
-type MeProps = {
-    items: Items
-}
-
-const CardAvatar = (props: { width: number, height: number, item: Item }) => <Avatar sx={{
-    width: props.width,
-    height: props.height,
-    border: '2px solid #fff',
-    margin: '-48px 32px 0 auto',
-    '& > img': {
-        margin: 0,
-    },
-}}>
-    <Image
-        src={props.item.image}
-        title='Bild på mig'
-        alt='Bild på mig'
-        id='minbild'
-        className='minbild img-circle'
-        height={props.width}
-        width={props.width}
-    />
-</Avatar>
-
-const MeCardMedia = (props: { item: Item }) => <CardMedia sx={{
-    position: 'relative', height: 150,
-    clipPath: 'polygon(0 0, 100% 0%, 100% 84%, 0% 100%)',
-    backgroundColor: 'rgba(0, 0, 0, 0.08)',
-}}>
-    <Image
-        src={props.item.bgImage}
-        fill
-        sizes='100vw'
-        style={{
-            objectFit: 'cover',
-            objectPosition: '0 -200px',
-        }}
-        alt='Bild på mig'
-        id='minbild'
-        className='minbild img-circle'
-    />
-</CardMedia>
-
-const ListIcon = (icon: string) => {
-    if(icon === 'ContentCut') {
-        return  <ContentCut fontSize="small" />
-
-    }
-}
-
-
-const Me: NextPage<MeProps> = (props) => {
-    const {items} = props
-    const imageSize = 56
+const Me: NextPage = () => {
+    const imageSize = 200
     const imageUrl = `https://www.gravatar.com/avatar/e6b67417d9fcae199d0eece60eaea9c0?s=${imageSize}`
     return (
-        <Container id="wrapper" className="container" maxWidth="sm">
-            <Grid container spacing={2} sx={{ my: 4}}>
-                {items.map((item) => (
-                    <Grid key={item.title} xs={12}>
-                        <Card sx={{ minWidth: 275 }}>
-                            {item.bgImage ? <MeCardMedia item={item} /> : null}
-                            {item.image ? <CardAvatar width={imageSize} height={imageSize} item={item} /> : null}
-                            <CardContent>
-                                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                    {item.title}
-                                </Typography>
-                                <Typography variant="h5" component="div">
-                                    {item.list.title}
-                                </Typography>
-                                <MenuList>
-                                    {item.list.listItems.map((listItem) => (
-                                        <MenuItem key={listItem.title}>
-                                            <ListItemIcon>
-                                                {listItem.icon ? ListIcon(listItem.icon): <WorkIcon fontSize="small" />}
-                                            </ListItemIcon>
-                                            <ListItemText>{listItem.title}</ListItemText>
-                                            <Typography variant="body2" color="text.secondary">
-                                                {listItem.value}
-                                            </Typography>
-                                        </MenuItem>
-                                    ))}
-                                </MenuList>
-                            </CardContent>
-                        </Card>
-                    </Grid>
-
-                ))
-
-                }
+        <Container id="wrapper" className="container" maxWidth="lg">
+            <Box
+                id="bgwrapper"
+                sx={{
+                    my: 4,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}
+            >
                 <Box id="cv" className="rubrik">
-                    <Card sx={{ minWidth: 275 }}>
-                        <CardMedia sx={{ position: 'relative', height: 150,
-                            clipPath: 'polygon(0 0, 100% 0%, 100% 84%, 0% 100%)',
-                            backgroundColor: 'rgba(0, 0, 0, 0.08)',
-
-                        }}>
-                            <Image
-                                src={profileBgPic}
-                                fill
-                                sizes="100vw"
-                                style={{
-                                    objectFit: 'cover',
-                                    objectPosition: '0 -200px'
-                                }}
-                                alt="Bild på mig"
-                                id="minbild"
-                                className="minbild img-circle"
-                            />
-                        </CardMedia>
-                        <Avatar sx={{
-                            width: imageSize,
-                            height: imageSize,
-                            border: '2px solid #fff',
-                            margin: '-48px 32px 0 auto',
-                            '& > img': {
-                                margin: 0,
-                            }
-                        }}>
-                            <Image
-                                src={imageUrl}
-                                title="Bild på mig"
-                                alt="Bild på mig"
-                                id="minbild"
-                                className="minbild img-circle"
-                                height={imageSize}
-                                width={imageSize}
-                            />
-                        </Avatar>
-                        <CardContent>
-
-                            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                Curriculum Vitae - Christian Widlund
-                            </Typography>
-                            <Typography variant="h5" component="div">
-                                Index
-                            </Typography>
-                            <Typography sx={{ mb: 1.5 }} color="text.secondary">
-                                adjective
-                            </Typography>
-                            <Typography variant="body2">
-                                well meaning and kindly.
-                                <br />
-                                {'"a benevolent smile"'}
-                            </Typography>
-                            <MenuList>
-                                <MenuItem>
-                                    <ListItemIcon>
-                                        <ContentCut fontSize="small" />
-                                    </ListItemIcon>
-                                    <ListItemText>Personuppgifter</ListItemText>
-                                    <Typography variant="body2" color="text.secondary">
-                                        ⌘X
-                                    </Typography>
-                                </MenuItem>
-                                <MenuItem>
-                                    <ListItemIcon>
-                                        <ContentCopy fontSize="small" />
-                                    </ListItemIcon>
-                                    <ListItemText>Copy</ListItemText>
-                                    <Typography variant="body2" color="text.secondary">
-                                        ⌘C
-                                    </Typography>
-                                </MenuItem>
-                                <MenuItem>
-                                    <ListItemIcon>
-                                        <ContentPaste fontSize="small" />
-                                    </ListItemIcon>
-                                    <ListItemText>Paste</ListItemText>
-                                    <Typography variant="body2" color="text.secondary">
-                                        ⌘V
-                                    </Typography>
-                                </MenuItem>
-                                <Divider />
-                                <MenuItem>
-                                    <ListItemIcon>
-                                        <Cloud fontSize="small" />
-                                    </ListItemIcon>
-                                    <ListItemText>Web Clipboard</ListItemText>
-                                </MenuItem>
-                            </MenuList>
-                        </CardContent>
-                        <CardActions>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
-                    </Card>
                     <fieldset>
                         <legend>
                             <h1>Curriculum Vitae - Christian Widlund</h1>
@@ -272,7 +83,7 @@ const Me: NextPage<MeProps> = (props) => {
                                                 href="apps/mui/src/pages#ovriga"
                                                 className="toggler"
                                             >
-
+                                                {' '}
                                                 Övriga meriter
                                             </a>
                                         </li>
@@ -298,86 +109,89 @@ const Me: NextPage<MeProps> = (props) => {
                             <hr />
                             <table id="ptable" className="table-striped">
                                 <tbody>
-                                <tr>
-                                    <td>Förnamn:</td>
-                                    <td>Christian</td>
-                                </tr>
-                                <tr>
-                                    <td>Efternamn:</td>
-                                    <td>Widlund</td>
-                                </tr>
-                                <tr>
-                                    <td>Telefon:</td>
-                                    <td>
-                                        <a href="callto:0702478607">0702478607</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Utdelningsadress:</td>
-                                    <td>
-                                        <address>
-                                            Kristallvägen 174
-                                        </address>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Postnummer:</td>
-                                    <td>126 79</td>
-                                </tr>
-                                <tr>
-                                    <td>Postort:</td>
-                                    <td>HÄGERTSTEN</td>
-                                </tr>
-                                <tr>
-                                    <td>Land:</td>
-                                    <td>Sverige</td>
-                                </tr>
-                                <tr>
-                                    <td>E-post adress:</td>
-                                    <td>
-                                        <a href="mailto:christian.widlund@gmail.com">
-                                            christian.widlund@gmail.com
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Hemsida:</td>
-                                    <td>
-                                        <a
-                                            href="https://hptftw.ath.cx/cv"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            https://hptftw.ath.cx/cv
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>LinkedIn:</td>
-                                    <td>
-                                        <a
-                                            href="https://se.linkedin.com/pub/christian-widlund/47/860/484"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <Image
-                                                src={linkedInPic}
-                                                width="20"
-                                                height="15"
-                                                alt="Visa Christian Widlunds profil på LinkedIn"
-                                            />
-                                            Visa Christian Widlunds profil
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Facebook:</td>
-                                    <td>
-                                        <a
-                                            href="https://facebook.com/chrillep"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
+                                    <tr>
+                                        <td>Förnamn:</td>
+                                        <td>Christian</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Efternamn:</td>
+                                        <td>Widlund</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Telefon:</td>
+                                        <td>
+                                            <a href="callto:0702478607">
+                                                0702478607
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Utdelningsadress:</td>
+                                        <td>
+                                            <address>
+                                                {' '}
+                                                Kristallvägen 174
+                                            </address>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Postnummer:</td>
+                                        <td>126 79</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Postort:</td>
+                                        <td>HÄGERTSTEN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Land:</td>
+                                        <td>Sverige</td>
+                                    </tr>
+                                    <tr>
+                                        <td>E-post adress:</td>
+                                        <td>
+                                            <a href="mailto:christian.widlund@gmail.com">
+                                                christian.widlund@gmail.com
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hemsida:</td>
+                                        <td>
+                                            <a
+                                                href="http://hptftw.ath.cx/cv"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                http://hptftw.ath.cx/cv
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>LinkedIn:</td>
+                                        <td>
+                                            <a
+                                                href="https://se.linkedin.com/pub/christian-widlund/47/860/484"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <Image
+                                                    src={linkedInPic}
+                                                    width="20"
+                                                    height="15"
+                                                    alt="Visa Christian Widlunds profil på LinkedIn"
+                                                />
+                                                Visa Christian Widlunds profil
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Facebook:</td>
+                                        <td>
+                                            <a
+                                                href="https://facebook.com/chrillep"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
                                                 <span>
                                                     <Image
                                                         src={facebookPic}
@@ -388,18 +202,18 @@ const Me: NextPage<MeProps> = (props) => {
                                                     Visa Christian Widlunds
                                                     profil
                                                 </span>
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Twitter:</td>
-                                    <td>
-                                        <a
-                                            href="https://twitter.com/Chrillep"
-                                            className="twitter-follow-button"
-                                            data-show-count="false"
-                                            data-lang="sv"
-                                        >
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>Twitter:</td>
+                                        <td>
+                                            <a
+                                                href="https://twitter.com/Chrillep"
+                                                className="twitter-follow-button"
+                                                data-show-count="false"
+                                                data-lang="sv"
+                                            >
                                                 <span>
                                                     <Image
                                                         src={twitterPic}
@@ -409,9 +223,9 @@ const Me: NextPage<MeProps> = (props) => {
                                                     />
                                                     Följ @Chrillep
                                                 </span>
-                                        </a>
-                                    </td>
-                                </tr>
+                                            </a>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </Box>
@@ -434,10 +248,17 @@ const Me: NextPage<MeProps> = (props) => {
                         <Box id="presentation" className="content">
                             <hr />
                             <p>
-                                Jag heter<span className="namn">christian widlund</span> och bor sedan 7 år i Stockholm. Har precis avslutat min studier inom
-                                <a href="https://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">Webbapplikationsutveckling</a>
-                                på
-                                <a href="https://jenseneducation.se/">JENSEN education.</a>
+                                Jag heter{' '}
+                                <span className="namn">christian widlund</span>{' '}
+                                och bor sedan 7 år i Stockholm. Har precis
+                                avslutat min studier inom{' '}
+                                <a href="http://jenseneducation.se/JENSEN-yrkeshogskola/Utbildningar/Webbapplikationsutvecklare/">
+                                    Webbapplikationsutveckling
+                                </a>{' '}
+                                på{' '}
+                                <a href="http://jenseneducation.se/">
+                                    JENSEN education.
+                                </a>
                                 Har sedan en tidig ålder haft ett gediget
                                 intresse för teknik och datorer. Jag studerade
                                 därmed media med rörlig bild och ljud som fokus.
@@ -446,7 +267,7 @@ const Me: NextPage<MeProps> = (props) => {
                                 hårdvara. Flyttade senare ner till Stockholm för
                                 att skaffa mig ett jobb.inte så snart så fick
                                 jag ett jobb hos ett rekryteringsföretag och
-                                genom det jobb på
+                                genom det jobb på{' '}
                                 <abbr title="Stort dataföretag">DELL</abbr>.
                             </p>
                             <p>
@@ -476,10 +297,15 @@ const Me: NextPage<MeProps> = (props) => {
                                 eller webbprogramering. Jag kom in på
                                 webbapplikationsutvecklingsprogramet hos JENSEN
                                 education, under studietiden har jag praktiserat
-                                på <a href="www.mobillan.se">www.mobillan.se</a>,
-                                <a href="www.nettofinans.se">www.nettofinans.se</a>
-                                och
-                                <a href="www.vulkanmedia.se">www.vulkanmedia.se</a>
+                                på <a href="www.mobillan.se">www.mobillan.se</a>
+                                ,{' '}
+                                <a href="www.nettofinans.se">
+                                    www.nettofinans.se
+                                </a>{' '}
+                                och{' '}
+                                <a href="www.vulkanmedia.se">
+                                    www.vulkanmedia.se
+                                </a>{' '}
                                 som jag varit med från start till sjösättning.
                                 Nu ser jag fram emot nya utmaningar.
                             </p>
@@ -564,7 +390,7 @@ const Me: NextPage<MeProps> = (props) => {
                                 <ul>
                                     <li className="unstyled">
                                         <h4>
-                                            <a href="https://www.vulkanmedia.se">
+                                            <a href="http://www.vulkanmedia.se">
                                                 Vulkanmedia.se
                                             </a>
                                         </h4>
@@ -600,11 +426,11 @@ const Me: NextPage<MeProps> = (props) => {
                                     </ul>
                                     <li className="nej">
                                         <h4>
-                                            <a href="https://www.mobillan.se">
+                                            <a href="http://www.mobillan.se">
                                                 Mobillan.se
-                                            </a>
-                                            /
-                                            <a href="https://www.nettofinans.se">
+                                            </a>{' '}
+                                            /{' '}
+                                            <a href="http://www.nettofinans.se">
                                                 Nettofinans.se
                                             </a>
                                         </h4>
@@ -724,8 +550,10 @@ const Me: NextPage<MeProps> = (props) => {
                                     <li>Tidsperiod: 2003 - 2004</li>
                                     <li>
                                         Beskrivning: Gjorde lumpen i 7,5 halv
-                                        månad i Östersund på
-                                        <a href="https://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">I5</a>
+                                        månad i Östersund på{' '}
+                                        <a href="http://sv.wikipedia.org/wiki/J%C3%A4mtlands_f%C3%A4ltj%C3%A4garregemente">
+                                            I5
+                                        </a>
                                         . Har 10/8/8 i betyg och cerifikat i
                                         vinteröverlevnad
                                     </li>
@@ -736,16 +564,9 @@ const Me: NextPage<MeProps> = (props) => {
                 </Box>
 
                 <ProTip />
-            </Grid>
+            </Box>
         </Container>
     )
 }
-export async function getStaticProps() {
-    const items = getData()
-    return {
-        props: {
-            items,
-        },
-    }
-}
+
 export default Me

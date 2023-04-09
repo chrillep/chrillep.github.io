@@ -5,6 +5,12 @@ const config: StorybookConfig = {
         '@storybook/addon-links',
         '@storybook/addon-essentials',
         '@storybook/addon-interactions',
+        '@storybook/addon-storysource',
+        '@storybook/addon-a11y',
+        '@storybook/addon-coverage',
+        'storybook-addon-pseudo-states',
+        'storybook-mobile',
+        '@storybook/addon-jest',
     ],
     framework: {
         name: '@storybook/react-vite',
