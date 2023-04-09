@@ -36,8 +36,8 @@
     "@vitejs/plugin-react": "3.1.0",
     "prop-types": "15.8.1",
     "storybook": "7.0.2",
-    "storybook-addon-pseudo-states": "^1.15.5",
-    "storybook-mobile": "^1.0.1",
+    "storybook-addon-pseudo-states": "1.15.5",
+    "storybook-mobile": "1.0.1",
     "typescript": "5.0.3",
     "vite": "4.2.1"
   }
