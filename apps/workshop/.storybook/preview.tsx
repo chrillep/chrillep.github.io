@@ -1,14 +1,12 @@
 import { useEffect } from 'react'
 import { Preview } from '@storybook/react'
+import '../styles/globals.css'
 import 'ui-tailwind/styles.css'
 
 const DEFAULT_THEME = 'light'
 
 const preview: Preview = {
     parameters: {
-        backgrounds: {
-            default: 'light',
-        },
         actions: { argTypesRegex: '^on[A-Z].*' },
         controls: {
             matchers: {
