@@ -27,6 +27,9 @@ const Home: NextPage = () => {
                 <Link href="/me" color="secondary">
                     Go to the me page
                 </Link>
+                <Link href="/me2" color="secondary">
+                    Go to the me page WIP
+                </Link>
                 <ProTip />
             </Box>
         </Container>
