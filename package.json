@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --concurrency 14",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "test": "turbo run test",
@@ -28,5 +28,5 @@
     "node": ">=18.0.0"
   },
   "dependencies": {},
-  "packageManager": "pnpm@8.3.1"
+  "packageManager": "pnpm@8.14.3"
 }
