@@ -18,15 +18,14 @@
     "release": "turbo run build --filter=docs^... && changeset publish"
   },
   "devDependencies": {
+    "@changesets/cli": "2.26.1",
+    "eslint": "8.37.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "2.8.7",
-    "turbo": "latest",
-    "@changesets/cli": "2.26.1",
-    "eslint": "8.37.0"
+    "turbo": "^1.11.3"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@8.14.3"
 }
