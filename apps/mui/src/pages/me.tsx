@@ -95,10 +95,10 @@ const Me: NextPage<MeProps> = (props) => {
                                     {item.title}
                                 </Typography>
                                 <Typography variant="h5" component="div">
-                                    {item.list.title}
+                                    {item?.list?.title}
                                 </Typography>
                                 <MenuList>
-                                    {item.list.listItems.map((listItem) => (
+                                    {item?.list?.listItems.map((listItem) => (
                                         <MenuItem key={listItem.title}>
                                             <ListItemIcon>
                                                 {listItem.icon ? ListIcon(listItem.icon): <WorkIcon fontSize="small" />}
