@@ -10,10 +10,10 @@
         "clean": "rm -rf .turbo && rm -rf node_modules"
     },
     "dependencies": {
-        "@emotion/cache": "11.10.7",
-        "@emotion/react": "11.10.6",
-        "@emotion/server": "11.10.0",
-        "@emotion/styled": "11.10.6",
+        "@emotion/cache": "11.11.0",
+        "@emotion/react": "11.11.3",
+        "@emotion/server": "11.11.0",
+        "@emotion/styled": "11.11.0",
         "@mui/icons-material": "5.11.16",
         "@mui/material": "5.11.16",
         "next": "13.3.0",
