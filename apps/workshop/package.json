@@ -44,6 +44,6 @@
     "storybook-mobile": "1.0.1",
     "tailwind-config": "workspace:*",
     "typescript": "5.0.3",
-    "vite": "4.2.1"
+    "vite": "4.5.2"
   }
 }
