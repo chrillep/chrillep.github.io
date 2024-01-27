@@ -10,6 +10,10 @@
     "labels": ["dependencies"],
     "packageRules": [
         {
+            "matchCategories": ["js"],
+            "addLabels": ["js", "javascript"]
+        },
+        {
             "matchDatasources": ["docker"],
             "addLabels": ["docker"]
         },
@@ -30,11 +34,8 @@
             "addLabels": ["patch"]
         },
         {
-          "groupName": "Storybook Testing",
-          "matchPackagePrefixes": ["@storybook/"]
+            "groupName": "Storybook Testing",
+            "matchPackagePrefixes": ["@storybook/"]
         }
-    ],
-    "js": {
-        "addLabels": ["js", "javascript"]
-    }
+    ]
 }
