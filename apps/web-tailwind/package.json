@@ -15,7 +15,7 @@
     "ui-tailwind": "workspace:*"
   },
   "devDependencies": {
-    "@types/node": "18.15.12",
+    "@types/node": "18.19.10",
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "autoprefixer": "10.4.14",
