@@ -21,7 +21,7 @@
     "@changesets/cli": "2.26.1",
     "eslint": "8.37.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "2.8.7",
+    "prettier": "3.2.4",
     "turbo": "1.11.3"
   },
   "engines": {
