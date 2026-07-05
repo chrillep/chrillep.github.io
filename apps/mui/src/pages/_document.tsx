@@ -8,12 +8,11 @@ import Document, {
     DocumentContext,
 } from 'next/document';
 import createEmotionServer from '@emotion/server/create-instance';
-import { EmotionJSX } from '@emotion/react/types/jsx-namespace';
 import theme, { roboto } from '../helpers/theme';
 import createEmotionCache from '../helpers/createEmotionCache';
 
 interface MyDocumentProps extends DocumentProps {
-    emotionStyleTags: EmotionJSX.Element[];
+    emotionStyleTags: React.ReactElement[];
 }
 
 export default function MyDocument({ emotionStyleTags }: MyDocumentProps) {

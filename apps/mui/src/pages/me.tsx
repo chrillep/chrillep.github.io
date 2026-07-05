@@ -11,7 +11,7 @@ import profileBgPic from '../../public/assets/images/profile_bg.jpeg'
 import ImageIcon from '@mui/icons-material/Image';
 import WorkIcon from '@mui/icons-material/Work';
 import BeachAccessIcon from '@mui/icons-material/BeachAccess';
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid';
 
 import {
     Avatar,
@@ -86,7 +86,7 @@ const Me: NextPage<MeProps> = (props) => {
         <Container id="wrapper" className="container" maxWidth="sm">
             <Grid container spacing={2} sx={{ my: 4}}>
                 {items.map((item) => (
-                    <Grid key={item.title} xs={12}>
+                    <Grid key={item.title} size={12}>
                         <Card sx={{ minWidth: 275 }}>
                             {item.bgImage ? <MeCardMedia item={item} /> : null}
                             {item.image ? <CardAvatar width={imageSize} height={imageSize} item={item} /> : null}
