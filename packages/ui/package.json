@@ -14,11 +14,12 @@
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "clean": "rm -rf dist && rm -rf .turbo && rm -rf node_modules",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
-    "lint": "eslint \"src/**/*.ts*\"",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-presets/jest/node"
+    "preset": "jest-presets/jest/node",
+    "testEnvironment": "jsdom"
   },
   "devDependencies": {
     "@types/jest": "30.0.0",
@@ -27,6 +28,7 @@
     "eslint": "10.6.0",
     "eslint-config-custom": "workspace:*",
     "jest": "30.4.2",
+    "jest-environment-jsdom": "30.4.1",
     "jest-presets": "workspace:*",
     "react": "19.2.7",
     "tsconfig": "workspace:*",

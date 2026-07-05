@@ -1,9 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss" prefix(ui);
+@config "../tailwind.config.js";
 
 html[data-mode="dark"] {
-  @apply ui-bg-slate-800 ui-text-white;
+  @apply ui:bg-slate-800 ui:text-white;
 }
 
 body {
