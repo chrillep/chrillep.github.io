@@ -1,11 +1,113 @@
 {
   "version": 1,
   "skills": {
+    "add-package": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/add-package/SKILL.md",
+      "computedHash": "876323e4a4cfc6c862eae37b944ff6e9dd324e877acb8fede0fc765214127fa4"
+    },
+    "author-ui-components": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/author-ui-components/SKILL.md",
+      "computedHash": "74ddbb569d17cc88846a8aadba00f86f1bbc42a37357765cf572868e57ad8b11"
+    },
+    "fix-issue": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/fix-issue/SKILL.md",
+      "computedHash": "32f2adeb2bae317243cf5e4986416063db137ed0b99393caaedcf6616f06ffe0"
+    },
+    "make-changes": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/make-changes/SKILL.md",
+      "computedHash": "e7729594dc40dd0daf8de435bf71138fb4c6bf59204c2ce5cd6fa9eaa5ea6255"
+    },
+    "make-decision-doc": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/make-decision-doc/SKILL.md",
+      "computedHash": "b68905905e4b3d2603425a756ff86f31ac3a7f01733474be9fc60e2865b6ec01"
+    },
+    "make-demo": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/make-demo/SKILL.md",
+      "computedHash": "e8a9d1abd3cb1202218de2e30b1582e4e01f139eb09dc60452c9f215d7faa560"
+    },
+    "make-pr": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/make-pr/SKILL.md",
+      "computedHash": "f43333b04a2ecc0d8a06a67ae862b8086ce540fa0ef345e2a9a5427f6d71e98c"
+    },
+    "publish-placeholder-package": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/publish-placeholder-package/SKILL.md",
+      "computedHash": "bbc7090a07793a36d4458b956397b1342fac469a35a7dd640079772fd4361013"
+    },
+    "remix": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/remix/SKILL.md",
+      "computedHash": "2c1aa257d2a413bf07c8470355adc7238979d80353b6f5dfff9d8e35abe8d8ff"
+    },
+    "review-pr": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/review-pr/SKILL.md",
+      "computedHash": "fd25b4dc3399bcdd80706577a8ddb23027ad0b7bd3b3b8de93f83b31c090c801"
+    },
+    "supersede-pr": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/supersede-pr/SKILL.md",
+      "computedHash": "0e2c69878370a54af8a6db77da8037d1704c26128836496227d8b8d25a996d2e"
+    },
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
       "skillPath": "skills/turborepo/SKILL.md",
       "computedHash": "7fcd5ac3e11b30b86907ab9a81af6888954d9f14c72f3e09f5cc2afcbd50956d"
+    },
+    "typescript-expert": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/typescript-expert/SKILL.md",
+      "computedHash": "d0a0b8aab0e934bdfe04a4d798b5786c3744ccf2bd53fe1f5403dc41ffb749ea"
+    },
+    "update-pr": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/update-pr/SKILL.md",
+      "computedHash": "5c9fa404beb478fdc1423b847a06fb51b1fea4870269a4e75b119bddedb3dfcb"
+    },
+    "write-api-docs": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/write-api-docs/SKILL.md",
+      "computedHash": "1265c57655ab8f36f880e4ea111d0f31d0d684996dd84f90f4430e7361b38455"
+    },
+    "write-readme": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/write-readme/SKILL.md",
+      "computedHash": "409a6a8963fa6684b9b6fa4b7ff2311eccfe581bb7390c23ca2c7ca5646808d7"
+    },
+    "write-tests": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/write-tests/SKILL.md",
+      "computedHash": "18209a3fc06d5db6f3a4da869a90f308f6c7b0bd81b5633e3fce576a2819ea3d"
+    },
+    "write-ui-module-readme": {
+      "source": "remix-run/remix",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/write-ui-module-readme/SKILL.md",
+      "computedHash": "01f9817b146cf16f60acf104b71bf50d0396eb7eae4228d22995f047a9d4b924"
     }
   }
 }
