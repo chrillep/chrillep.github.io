@@ -17,8 +17,7 @@
     },
     "enabledManagers": [
         "github-actions",
-        "npm",
-        "pnpm"
+        "npm"
     ],
     "hostRules": [
         {
