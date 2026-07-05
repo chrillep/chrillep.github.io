@@ -67,6 +67,12 @@
       "skillPath": ".agents/skills/supersede-pr/SKILL.md",
       "computedHash": "0e2c69878370a54af8a6db77da8037d1704c26128836496227d8b8d25a996d2e"
     },
+    "triage": {
+      "source": "pnpm/pnpm",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/triage/SKILL.md",
+      "computedHash": "9fb918999469e12b702fc2301bbf7a37ea54751931357915253fe8e544951018"
+    },
     "turborepo": {
       "source": "vercel/turborepo",
       "sourceType": "github",
