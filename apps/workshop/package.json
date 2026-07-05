@@ -22,6 +22,7 @@
     "@storybook/addon-coverage": "3.0.1",
     "@storybook/addon-docs": "10.4.6",
     "@storybook/addon-links": "10.4.6",
+    "@storybook/addon-mcp": "^0.6.0",
     "@storybook/cli": "10.4.6",
     "@storybook/icons": "^2.1.0",
     "@storybook/react": "10.4.6",
