@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import { Preview } from '@storybook/react'
+import { Preview } from '@storybook/react-vite'
 import '../styles/globals.css'
 import 'ui-tailwind/styles.css'
 
@@ -8,12 +8,17 @@ const DEFAULT_THEME = 'light'
 const preview: Preview = {
     parameters: {
         actions: { argTypesRegex: '^on[A-Z].*' },
+
         controls: {
             matchers: {
                 color: /(background|color)$/i,
                 date: /Date$/,
             },
         },
+
+        docs: {
+            codePanel: true
+        }
     },
     globalTypes: {
         theme: {
