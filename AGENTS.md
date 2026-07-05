@@ -12,6 +12,14 @@ This repo is a **pnpm + Turborepo monorepo**. Use the root scripts for cross-wor
 | Lint all workspaces that expose a lint script | `pnpm lint` |
 | Run all dev servers through Turbo | `pnpm dev` |
 
+Validated on the current branch:
+
+- `pnpm install` works with **Node 24+** and **pnpm 11**, but may print non-fatal bin-link warnings from transitive dependencies.
+- `pnpm --filter ui build` works.
+- `pnpm --filter ui test -- --runInBand --runTestsByPath src/__tests__/index.test.tsx` works.
+- `pnpm --filter ui-tailwind build` works.
+- `pnpm lint` is currently **not a reliable gate**; the repo is using a root `eslint.config.js`, but `eslint-plugin-react@7.37.5` still crashes under ESLint 10 flat config with `contextOrFilename.getFilename is not a function`.
+
 Use workspace filters when you only need one app or package:
 
 | Task | Command |
@@ -33,6 +41,8 @@ Current test coverage is minimal: the only checked-in test file is `packages/ui/
 
 Use **Node 24+** and **pnpm 11** to match the root `package.json`.
 
+`pnpm-workspace.yaml` contains the pnpm build-script approvals. If `pnpm install` starts failing with `ERR_PNPM_IGNORED_BUILDS`, check that the dependency is explicitly allowed there before trying ad hoc workarounds.
+
 ## High-level architecture
 
 This repository is organized as a set of **independent frontend apps** plus a few **shared workspace packages**:
@@ -52,13 +62,20 @@ Shared packages provide the reusable building blocks and repo-wide config:
 
 Turbo coordinates builds and tests from the root. The root `turbo.json` makes `build` depend on upstream package builds, and `test` depend on upstream builds, so package changes can affect downstream app commands even when the app code itself is untouched.
 
+The most important dependency chains are:
+
+- `apps/docs` and `apps/web` -> `packages/ui`
+- `apps/web-tailwind` and `apps/workshop` -> `packages/ui-tailwind`
+- Any root `build` or `test` command that reaches an app may first need its upstream package build to succeed because of Turbo's `dependsOn: ["^build"]`
+
 ## Key conventions
 
 - Prefer **workspace package imports** (`ui`, `ui-tailwind`, `database`, etc.) over relative cross-package imports.
 - Next.js apps extend the shared TypeScript config from `tsconfig/nextjs.json`; shared libraries extend `tsconfig/react-library.json`. Reuse those internal config packages instead of introducing app-local base configs.
-- ESLint is centralized through `eslint-config-custom`; the repo root `.eslintrc.js` also declares `apps/*` as Next root directories.
+- ESLint is centralized through `eslint-config-custom`, but the active ESLint 10 entry point is the root **`eslint.config.js`**. The older `.eslintrc.js` files are still present, but future lint fixes should start from the flat config path instead of adding more legacy config.
 - `ui-tailwind` is not self-styling at runtime unless the consumer imports its CSS bundle. When using it in an app or Storybook, import **`ui-tailwind/styles.css`** explicitly.
 - Tailwind classes inside `ui-tailwind` are intentionally **prefixed with `ui-`**. Shared Tailwind tokens such as `brandblue`, `brandred`, and the dark-mode selector live in `packages/tailwind-config` and `packages/ui-tailwind/src/styles.css`.
 - The `ui-tailwind` build is intentionally two-step: Tailwind CLI writes `dist/index.css`, then `tsup` bundles the components. `tsup.config.ts` keeps `clean: false` so the generated CSS is not deleted.
+- Tailwind 4 is wired through `@tailwindcss/postcss`, and the CSS entry files use `@import "tailwindcss"` / `@config ...` syntax rather than legacy `@tailwind base/components/utilities`.
 - Storybook theme switching in `apps/workshop` works by setting `data-mode` on the root HTML element in `.storybook/preview.tsx`; that matches the dark-mode selector used by `ui-tailwind` styles.
 - The repo mixes several app templates. Avoid “standardizing” folder layout or code style across all apps unless the change is clearly repo-wide; some apps use `pages/`, some use `src/pages/`, and the Remix app uses `app/`.
