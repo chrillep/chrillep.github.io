@@ -7,8 +7,20 @@
         ":pinAllExceptPeerDependencies"
     ],
     "commitMessageTopic": "{{depName}}",
-    "prConcurrentLimit": 2,
+    "prConcurrentLimit": 1,
     "labels": ["dependencies"],
+    "toolSettings": {
+        "nodeMaxMemory": 2560
+    },
+    "hostRules": [
+        {
+            "matchHost": "github.com",
+            "env": {
+                "PNPM_MAX_WORKERS": "1",
+                "PNPM_CONFIG_TRUST_LOCKFILE": "true"
+            }
+        }
+    ],
     "packageRules": [
         {
             "matchCategories": ["js"],
