@@ -12,12 +12,12 @@
     "toolSettings": {
         "nodeMaxMemory": 2560
     },
+    "env": {
+        "PNPM_MAX_WORKERS": "1"
+    },
     "hostRules": [
         {
-            "matchHost": "github.com",
-            "env": {
-                "PNPM_MAX_WORKERS": "1"
-            }
+            "matchHost": "github.com"
         }
     ],
     "packageRules": [
