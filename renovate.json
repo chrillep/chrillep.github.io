@@ -16,8 +16,7 @@
         {
             "matchHost": "github.com",
             "env": {
-                "PNPM_MAX_WORKERS": "1",
-                "PNPM_CONFIG_TRUST_LOCKFILE": "true"
+                "PNPM_MAX_WORKERS": "1"
             }
         }
     ],
