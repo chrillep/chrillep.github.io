@@ -61,6 +61,12 @@
       "skillPath": ".agents/skills/review-pr/SKILL.md",
       "computedHash": "fd25b4dc3399bcdd80706577a8ddb23027ad0b7bd3b3b8de93f83b31c090c801"
     },
+    "storybook-upgrade": {
+      "source": "storybookjs/storybook",
+      "sourceType": "github",
+      "skillPath": ".agents/skills/storybook-upgrade/SKILL.md",
+      "computedHash": "f1dd2485f4750289180a9c474b0e311bb3d7d3c695f619fde76ecfbf61de0c93"
+    },
     "supersede-pr": {
       "source": "remix-run/remix",
       "sourceType": "github",
