@@ -10,11 +10,16 @@
     "prConcurrentLimit": 1,
     "labels": ["dependencies"],
     "toolSettings": {
-        "nodeMaxMemory": 2560
+        "nodeMaxMemory": 2048
     },
     "env": {
         "PNPM_MAX_WORKERS": "1"
     },
+    "enabledManagers": [
+        "github-actions",
+        "npm",
+        "pnpm"
+    ],
     "hostRules": [
         {
             "matchHost": "github.com"
