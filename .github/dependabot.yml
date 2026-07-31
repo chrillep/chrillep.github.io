@@ -10,10 +10,5 @@ updates:
     schedule:
       interval: "monthly"
 
-  - package-ecosystem: "npm"
-    directories:
-      - "/"
-      - "/apps/*"
-      - "/packages/*"
-    schedule:
-      interval: "monthly"
+  # npm dependencies are managed by Renovate — do not add npm here to avoid
+  # lockfile conflicts (Dependabot bumps package.json without updating pnpm-lock.yaml)
