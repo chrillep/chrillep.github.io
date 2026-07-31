@@ -14,15 +14,15 @@
     "@remix-run/server-runtime": "2.17.5",
     "@vercel/analytics": "2.0.1",
     "@vercel/remix-entry-server": "0.1.1",
-    "react": "19.2.7",
-    "react-dom": "19.2.7",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
     "ui": "workspace:*"
   },
   "devDependencies": {
     "@remix-run/dev": "2.17.5",
     "@types/react": "19.2.17",
     "@types/react-dom": "19.2.3",
-    "eslint": "10.6.0",
+    "eslint": "10.8.0",
     "tsconfig": "workspace:*",
     "typescript": "6.0.3"
   },
