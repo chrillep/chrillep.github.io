@@ -303,13 +303,13 @@ importers:
         specifier: 10.5.5
         version: 10.5.5(@types/react@19.2.17)(react@19.2.8)(storybook@10.5.5(@types/react@19.2.17)(prettier@3.9.6)(react@19.2.8))
       '@storybook/addon-mcp':
-        specifier: ^0.6.0
+        specifier: 0.6.0
         version: 0.6.0(storybook@10.5.5(@types/react@19.2.17)(prettier@3.9.6)(react@19.2.8))(typescript@6.0.3)
       '@storybook/cli':
         specifier: 10.5.5
         version: 10.5.5(@types/react@19.2.17)(prettier@3.9.6)(react@19.2.8)(supports-color@8.1.1)
       '@storybook/icons':
-        specifier: ^2.1.0
+        specifier: 2.1.0
         version: 2.1.0(react@19.2.8)
       '@storybook/react':
         specifier: 10.5.5
@@ -318,7 +318,7 @@ importers:
         specifier: 10.5.5
         version: 10.5.5(@types/react-dom@19.2.3(@types/react@19.2.17))(@types/react@19.2.17)(esbuild@0.28.1)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)(rollup@4.62.3)(storybook@10.5.5(@types/react@19.2.17)(prettier@3.9.6)(react@19.2.8))(supports-color@8.1.1)(typescript@6.0.3)(vite@8.1.5(@types/node@26.1.2)(esbuild@0.28.1)(jiti@2.7.0)(yaml@2.9.0))
       '@storybook/test':
-        specifier: ^8.6.15
+        specifier: 8.6.15
         version: 8.6.15(storybook@10.5.5(@types/react@19.2.17)(prettier@3.9.6)(react@19.2.8))
       '@tailwindcss/postcss':
         specifier: 4.3.3
