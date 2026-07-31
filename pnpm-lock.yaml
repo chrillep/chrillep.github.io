@@ -465,7 +465,7 @@ importers:
     dependencies:
       '@headlessui/react':
         specifier: 2.2.10
-        version: 2.2.10(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
+        version: 2.2.10(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
     devDependencies:
       '@tailwindcss/cli':
         specifier: 4.3.3
@@ -486,8 +486,8 @@ importers:
         specifier: 8.5.25
         version: 8.5.25
       react:
-        specifier: 19.2.7
-        version: 19.2.7
+        specifier: 19.2.8
+        version: 19.2.8
       tailwind-config:
         specifier: workspace:*
         version: link:../tailwind-config
@@ -7138,10 +7138,6 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
 
-  react@19.2.7:
-    resolution: {integrity: sha512-HNe9WslTbXmFK8o8cmwgAeJFSBvt1bPdHCVKtaaV+WlAN36mpT4hcRpwbf3fY56ar2oIXzsBpOAiIRHAdY0OlQ==}
-    engines: {node: '>=0.10.0'}
-
   react@19.2.8:
     resolution: {integrity: sha512-PWaYA1L/q9u2u7xYQi+Y3L3Yfnie7XyLeaJICV1MGD6LprsBxcAqGjYyr0eY3p+QdsA+x/Irkt4Qif8D63+Sbw==}
     engines: {node: '>=0.10.0'}
@@ -9409,25 +9405,11 @@ snapshots:
       '@floating-ui/core': 1.8.0
       '@floating-ui/utils': 0.2.12
 
-  '@floating-ui/react-dom@2.1.9(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@floating-ui/dom': 1.8.0
-      react: 19.2.7
-      react-dom: 19.2.8(react@19.2.7)
-
   '@floating-ui/react-dom@2.1.9(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@floating-ui/dom': 1.8.0
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
-
-  '@floating-ui/react@0.26.28(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@floating-ui/react-dom': 2.1.9(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      '@floating-ui/utils': 0.2.12
-      react: 19.2.7
-      react-dom: 19.2.8(react@19.2.7)
-      tabbable: 6.5.0
 
   '@floating-ui/react@0.26.28(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
@@ -9438,16 +9420,6 @@ snapshots:
       tabbable: 6.5.0
 
   '@floating-ui/utils@0.2.12': {}
-
-  '@headlessui/react@2.2.10(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@floating-ui/react': 0.26.28(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      '@react-aria/focus': 3.22.1(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      '@react-aria/interactions': 3.28.1(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      '@tanstack/react-virtual': 3.14.9(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      react: 19.2.7
-      react-dom: 19.2.8(react@19.2.7)
-      use-sync-external-store: 1.6.0(react@19.2.7)
 
   '@headlessui/react@2.2.10(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
@@ -10419,27 +10391,12 @@ snapshots:
     optionalDependencies:
       '@types/react': 19.2.17
 
-  '@react-aria/focus@3.22.1(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@swc/helpers': 0.5.23
-      react: 19.2.7
-      react-aria: 3.50.0(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      react-dom: 19.2.8(react@19.2.7)
-
   '@react-aria/focus@3.22.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
       '@swc/helpers': 0.5.23
       react: 19.2.8
       react-aria: 3.50.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
-
-  '@react-aria/interactions@3.28.1(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@react-types/shared': 3.36.0(react@19.2.7)
-      '@swc/helpers': 0.5.23
-      react: 19.2.7
-      react-aria: 3.50.0(react-dom@19.2.8(react@19.2.7))(react@19.2.7)
-      react-dom: 19.2.8(react@19.2.7)
 
   '@react-aria/interactions@3.28.1(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
@@ -10448,10 +10405,6 @@ snapshots:
       react: 19.2.8
       react-aria: 3.50.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react-dom: 19.2.8(react@19.2.8)
-
-  '@react-types/shared@3.36.0(react@19.2.7)':
-    dependencies:
-      react: 19.2.7
 
   '@react-types/shared@3.36.0(react@19.2.8)':
     dependencies:
@@ -11085,12 +11038,6 @@ snapshots:
       '@tailwindcss/oxide': 4.3.3
       postcss: 8.5.25
       tailwindcss: 4.3.3
-
-  '@tanstack/react-virtual@3.14.9(react-dom@19.2.8(react@19.2.7))(react@19.2.7)':
-    dependencies:
-      '@tanstack/virtual-core': 3.17.7
-      react: 19.2.7
-      react-dom: 19.2.8(react@19.2.7)
 
   '@tanstack/react-virtual@3.14.9(react-dom@19.2.8(react@19.2.8))(react@19.2.8)':
     dependencies:
@@ -15674,20 +15621,6 @@ snapshots:
       defu: 6.1.7
       destr: 2.0.5
 
-  react-aria@3.50.0(react-dom@19.2.8(react@19.2.7))(react@19.2.7):
-    dependencies:
-      '@internationalized/date': 3.12.2
-      '@internationalized/number': 3.6.7
-      '@internationalized/string': 3.2.9
-      '@react-types/shared': 3.36.0(react@19.2.7)
-      '@swc/helpers': 0.5.23
-      aria-hidden: 1.2.6
-      clsx: 2.1.1
-      react: 19.2.7
-      react-dom: 19.2.8(react@19.2.7)
-      react-stately: 3.48.0(react@19.2.7)
-      use-sync-external-store: 1.6.0(react@19.2.7)
-
   react-aria@3.50.0(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@internationalized/date': 3.12.2
@@ -15727,11 +15660,6 @@ snapshots:
       react: 19.2.8
       scheduler: 0.23.2
 
-  react-dom@19.2.8(react@19.2.7):
-    dependencies:
-      react: 19.2.7
-      scheduler: 0.27.0
-
   react-dom@19.2.8(react@19.2.8):
     dependencies:
       react: 19.2.8
@@ -15759,16 +15687,6 @@ snapshots:
       '@remix-run/router': 1.23.3
       react: 19.2.8
 
-  react-stately@3.48.0(react@19.2.7):
-    dependencies:
-      '@internationalized/date': 3.12.2
-      '@internationalized/number': 3.6.7
-      '@internationalized/string': 3.2.9
-      '@react-types/shared': 3.36.0(react@19.2.7)
-      '@swc/helpers': 0.5.23
-      react: 19.2.7
-      use-sync-external-store: 1.6.0(react@19.2.7)
-
   react-stately@3.48.0(react@19.2.8):
     dependencies:
       '@internationalized/date': 3.12.2
@@ -15787,8 +15705,6 @@ snapshots:
       prop-types: 15.8.1
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
-
-  react@19.2.7: {}
 
   react@19.2.8: {}
 
@@ -16831,10 +16747,6 @@ snapshots:
       punycode: 2.3.1
 
   uri-template-matcher@1.1.2: {}
-
-  use-sync-external-store@1.6.0(react@19.2.7):
-    dependencies:
-      react: 19.2.7
 
   use-sync-external-store@1.6.0(react@19.2.8):
     dependencies:
