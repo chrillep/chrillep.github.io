@@ -8,6 +8,9 @@
     ],
     "commitMessageTopic": "{{depName}}",
     "prConcurrentLimit": 2,
+    "toolSettings": {
+        "nodeMaxMemory": 1024
+    },
     "labels": ["dependencies"],
     "packageRules": [
         {
