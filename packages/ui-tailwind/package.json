@@ -29,7 +29,7 @@
     "@types/react": "19.2.18",
     "eslint": "10.8.0",
     "eslint-config-custom": "workspace:*",
-    "postcss": "8.5.25",
+    "postcss": "8.5.26",
     "react": "19.2.8",
     "tailwind-config": "workspace:*",
     "tailwindcss": "4.3.3",
