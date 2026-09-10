@@ -27,6 +27,6 @@
     "tailwind-config": "workspace:*",
     "tailwindcss": "4.3.3",
     "tsconfig": "workspace:*",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   }
 }
