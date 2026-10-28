@@ -37,7 +37,7 @@
     "postcss": "8.5.26",
     "postcss-loader": "8.2.1",
     "prop-types": "15.8.1",
-    "storybook": "10.5.10",
+    "storybook": "10.6.2",
     "tailwind-config": "workspace:*",
     "tailwindcss": "4.3.3",
     "typescript": "6.0.3",
