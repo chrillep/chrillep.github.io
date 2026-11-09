@@ -29,7 +29,7 @@
     "@types/react-dom": "19.2.4",
     "eslint": "10.14.0",
     "eslint-config-custom": "workspace:*",
-    "prettier": "3.9.6",
+    "prettier": "3.9.10",
     "tsconfig": "workspace:*",
     "typescript": "6.0.3"
   }
