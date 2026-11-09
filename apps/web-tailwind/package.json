@@ -16,7 +16,7 @@
     "ui-tailwind": "workspace:*"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.3.3",
+    "@tailwindcss/postcss": "4.3.5",
     "@types/node": "26.2.0",
     "@types/react": "19.2.18",
     "@types/react-dom": "19.2.4",
@@ -25,7 +25,7 @@
     "eslint-config-custom": "workspace:*",
     "postcss": "8.5.32",
     "tailwind-config": "workspace:*",
-    "tailwindcss": "4.3.3",
+    "tailwindcss": "4.3.5",
     "tsconfig": "workspace:*",
     "typescript": "6.0.3"
   }
