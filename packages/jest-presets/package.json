@@ -4,6 +4,6 @@
   "private": true,
   "license": "MIT",
   "dependencies": {
-    "ts-jest": "29.4.12"
+    "ts-jest": "29.4.15"
   }
 }
