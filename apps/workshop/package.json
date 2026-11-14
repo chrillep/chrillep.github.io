@@ -12,8 +12,8 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "react": "19.2.8",
-    "react-dom": "19.2.8",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
     "ui": "workspace:*",
     "ui-tailwind": "workspace:*"
   },
@@ -29,8 +29,8 @@
     "@storybook/react-vite": "10.6.7",
     "@storybook/test": "8.6.15",
     "@tailwindcss/postcss": "4.3.5",
-    "@types/react": "19.2.18",
-    "@types/react-dom": "19.2.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.3.0",
     "autoprefixer": "10.6.2",
     "eslint-plugin-storybook": "10.6.7",
