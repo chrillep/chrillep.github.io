@@ -22,7 +22,7 @@
     "eslint": "10.14.0",
     "eslint-config-custom": "workspace:*",
     "prettier": "3.10.0",
-    "turbo": "2.11.10"
+    "turbo": "2.11.11"
   },
   "engines": {
     "node": ">=24.0.0"
