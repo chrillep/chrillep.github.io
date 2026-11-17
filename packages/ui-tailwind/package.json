@@ -27,7 +27,7 @@
     "@tailwindcss/cli": "4.3.5",
     "@tailwindcss/postcss": "4.3.5",
     "@types/react": "19.3.0",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "eslint-config-custom": "workspace:*",
     "postcss": "8.5.33",
     "react": "19.3.1",
