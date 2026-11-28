@@ -29,7 +29,7 @@
     "@storybook/react-vite": "10.6.8",
     "@storybook/test": "8.6.15",
     "@tailwindcss/postcss": "4.3.5",
-    "@types/react": "19.3.2",
+    "@types/react": "19.3.3",
     "@types/react-dom": "19.3.0",
     "@vitejs/plugin-react": "6.3.0",
     "autoprefixer": "10.7.0",
