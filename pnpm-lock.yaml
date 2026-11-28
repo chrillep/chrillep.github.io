@@ -254,7 +254,7 @@ importers:
     dependencies:
       next:
         specifier: 16.4.6
-        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -269,8 +269,8 @@ importers:
         specifier: 8.1.3
         version: 8.1.3
       '@types/node':
-        specifier: 26.6.7
-        version: 26.6.7
+        specifier: 26.6.10
+        version: 26.6.10
       '@types/react':
         specifier: 19.3.1
         version: 19.3.1
@@ -361,7 +361,7 @@ importers:
         version: link:../../packages/database
       next:
         specifier: 16.4.6
-        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -376,8 +376,8 @@ importers:
         specifier: 8.1.3
         version: 8.1.3
       '@types/node':
-        specifier: 26.6.7
-        version: 26.6.7
+        specifier: 26.6.10
+        version: 26.6.10
       '@types/react':
         specifier: 19.3.1
         version: 19.3.1
@@ -404,7 +404,7 @@ importers:
         version: 2.2.10(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       next:
         specifier: latest
-        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
+        version: 16.4.6(@babel/core@8.1.3)(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react:
         specifier: 19.3.1
         version: 19.3.1
@@ -419,8 +419,8 @@ importers:
         specifier: 4.3.5
         version: 4.3.5
       '@types/node':
-        specifier: 26.6.7
-        version: 26.6.7
+        specifier: 26.6.10
+        version: 26.6.10
       '@types/react':
         specifier: 19.3.1
         version: 19.3.1
@@ -585,7 +585,7 @@ importers:
     dependencies:
       ts-jest:
         specifier: 29.4.15
-        version: 29.4.15(@babel/core@7.29.13(supports-color@8.1.1))(@jest/transform@30.5.2(supports-color@8.1.1))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1))(typescript@6.0.3)
+        version: 29.4.15(@babel/core@7.29.13(supports-color@8.1.1))(@jest/transform@30.5.2(supports-color@8.1.1))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1))(typescript@6.0.3)
 
   packages/tailwind-config:
     devDependencies:
@@ -3585,11 +3585,11 @@ packages:
   '@types/ms@2.1.0':
     resolution: {integrity: sha512-GsCCIZDE/p3i96vtEqx+7dBUGXrc7zeSK3wwPHIaRThS+9OhWIXRqzs4d6k1SVU8g91DrNRWxWUGhp5KXQb2VA==}
 
+  '@types/node@26.6.10':
+    resolution: {integrity: sha512-WJuPHoGB8WNQuTksNF7SOQpnH02PXeDYz4iueWbBT6/hTWnShY5F3T/hoJA3fY9+uYReDZ7pyTKKx83jQa7aGg==}
+
   '@types/node@26.6.11':
     resolution: {integrity: sha512-uUyQ2XLEz+EXh34lmS3GhKrkqn/8FU7KUiKRpk347At2bmnMVWss45yz8b4FG/tUtmV1tV/+TVkITItPROyeeQ==}
-
-  '@types/node@26.6.7':
-    resolution: {integrity: sha512-tovuRfrUILu6v46bMG+BgXxMvsqPBx2WO2as8Rpln+JTff1dbexMtAM4KFTejmL0axsnSWViCW7MecUQpLuBRA==}
 
   '@types/parse-json@4.0.2':
     resolution: {integrity: sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw==}
@@ -9617,7 +9617,7 @@ snapshots:
   '@jest/console@30.5.2':
     dependencies:
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       jest-message-util: 30.5.1
       jest-util: 30.5.1
@@ -9631,7 +9631,7 @@ snapshots:
       '@jest/test-result': 30.5.2
       '@jest/transform': 30.5.2(supports-color@8.1.1)
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       ci-info: 4.5.0
@@ -9639,7 +9639,7 @@ snapshots:
       fast-json-stable-stringify: 2.1.0
       graceful-fs: 4.2.12
       jest-changed-files: 30.5.1
-      jest-config: 30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest-config: 30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
       jest-haste-map: 30.5.1
       jest-message-util: 30.5.1
       jest-regex-util: 30.5.0
@@ -9667,7 +9667,7 @@ snapshots:
       '@jest/fake-timers': 30.5.2
       '@jest/types': 30.5.1
       '@types/jsdom': 21.1.7
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-mock: 30.5.2
       jest-util: 30.5.1
       jsdom: 26.1.0(supports-color@8.1.1)
@@ -9676,7 +9676,7 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 30.5.2
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-mock: 30.5.2
 
   '@jest/expect-utils@30.5.2':
@@ -9694,7 +9694,7 @@ snapshots:
     dependencies:
       '@jest/types': 30.5.1
       '@sinonjs/fake-timers': 15.5.0
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-message-util: 30.5.1
       jest-mock: 30.5.2
       jest-util: 30.5.1
@@ -9712,7 +9712,7 @@ snapshots:
 
   '@jest/pattern@30.5.0':
     dependencies:
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-regex-util: 30.5.0
 
   '@jest/reporters@30.5.2(supports-color@8.1.1)':
@@ -9723,7 +9723,7 @@ snapshots:
       '@jest/transform': 30.5.2(supports-color@8.1.1)
       '@jest/types': 30.5.1
       '@jridgewell/trace-mapping': 0.3.31
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       collect-v8-coverage: 1.0.3
       exit-x: 0.2.2
@@ -9800,7 +9800,7 @@ snapshots:
       '@jest/schemas': 30.5.0
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       '@types/yargs': 17.0.35
       chalk: 4.1.2
 
@@ -11232,7 +11232,7 @@ snapshots:
 
   '@types/cross-spawn@6.0.6':
     dependencies:
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
 
   '@types/debug@4.1.13':
     dependencies:
@@ -11273,7 +11273,7 @@ snapshots:
 
   '@types/jsdom@21.1.7':
     dependencies:
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       '@types/tough-cookie': 4.0.5
       parse5: 7.3.0
 
@@ -11291,11 +11291,11 @@ snapshots:
 
   '@types/ms@2.1.0': {}
 
-  '@types/node@26.6.11':
+  '@types/node@26.6.10':
     dependencies:
       undici-types: 8.9.0
 
-  '@types/node@26.6.7':
+  '@types/node@26.6.11':
     dependencies:
       undici-types: 8.9.0
 
@@ -13118,7 +13118,7 @@ snapshots:
 
   eval@0.1.8:
     dependencies:
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       require-like: 0.1.2
 
   event-target-shim@5.0.1: {}
@@ -13921,7 +13921,7 @@ snapshots:
       '@jest/expect': 30.5.2(supports-color@8.1.1)
       '@jest/test-result': 30.5.2
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       co: 4.6.0
       dedent: 1.7.2(babel-plugin-macros@3.1.0)
@@ -13940,6 +13940,25 @@ snapshots:
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
+
+  jest-cli@30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
+    dependencies:
+      '@jest/core': 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      '@jest/test-result': 30.5.2
+      '@jest/types': 30.5.1
+      chalk: 4.1.2
+      exit-x: 0.2.2
+      import-local: 3.2.0
+      jest-config: 30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest-util: 30.5.1
+      jest-validate: 30.5.1
+      yargs: 17.7.3
+    transitivePeerDependencies:
+      - '@types/node'
+      - babel-plugin-macros
+      - esbuild-register
+      - supports-color
+      - ts-node
 
   jest-cli@30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
     dependencies:
@@ -13960,24 +13979,36 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest-cli@30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
+  jest-config@30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
     dependencies:
-      '@jest/core': 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
-      '@jest/test-result': 30.5.2
+      '@babel/core': 7.29.13(supports-color@8.1.1)
+      '@jest/get-type': 30.5.0
+      '@jest/pattern': 30.5.0
+      '@jest/test-sequencer': 30.5.2
       '@jest/types': 30.5.1
+      babel-jest: 30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1)
       chalk: 4.1.2
-      exit-x: 0.2.2
-      import-local: 3.2.0
-      jest-config: 30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      ci-info: 4.5.0
+      deepmerge: 4.3.1
+      glob: 13.0.7
+      graceful-fs: 4.2.12
+      jest-circus: 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest-docblock: 30.5.0
+      jest-environment-node: 30.5.2
+      jest-regex-util: 30.5.0
+      jest-resolve: 30.5.1
+      jest-runner: 30.5.2(supports-color@8.1.1)
       jest-util: 30.5.1
       jest-validate: 30.5.1
-      yargs: 17.7.3
+      parse-json: 5.2.0
+      pretty-format: 30.5.1
+      slash: 3.0.0
+      strip-json-comments: 3.1.1
+    optionalDependencies:
+      '@types/node': 26.6.10
     transitivePeerDependencies:
-      - '@types/node'
       - babel-plugin-macros
-      - esbuild-register
       - supports-color
-      - ts-node
 
   jest-config@30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
     dependencies:
@@ -14006,37 +14037,6 @@ snapshots:
       strip-json-comments: 3.1.1
     optionalDependencies:
       '@types/node': 26.6.11
-    transitivePeerDependencies:
-      - babel-plugin-macros
-      - supports-color
-
-  jest-config@30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
-    dependencies:
-      '@babel/core': 7.29.13(supports-color@8.1.1)
-      '@jest/get-type': 30.5.0
-      '@jest/pattern': 30.5.0
-      '@jest/test-sequencer': 30.5.2
-      '@jest/types': 30.5.1
-      babel-jest: 30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1)
-      chalk: 4.1.2
-      ci-info: 4.5.0
-      deepmerge: 4.3.1
-      glob: 13.0.7
-      graceful-fs: 4.2.12
-      jest-circus: 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
-      jest-docblock: 30.5.0
-      jest-environment-node: 30.5.2
-      jest-regex-util: 30.5.0
-      jest-resolve: 30.5.1
-      jest-runner: 30.5.2(supports-color@8.1.1)
-      jest-util: 30.5.1
-      jest-validate: 30.5.1
-      parse-json: 5.2.0
-      pretty-format: 30.5.1
-      slash: 3.0.0
-      strip-json-comments: 3.1.1
-    optionalDependencies:
-      '@types/node': 26.6.7
     transitivePeerDependencies:
       - babel-plugin-macros
       - supports-color
@@ -14077,7 +14077,7 @@ snapshots:
       '@jest/environment': 30.5.2
       '@jest/fake-timers': 30.5.2
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-mock: 30.5.2
       jest-util: 30.5.1
       jest-validate: 30.5.1
@@ -14086,7 +14086,7 @@ snapshots:
     dependencies:
       '@jest/types': 30.5.1
       '@parcel/watcher': 2.6.0
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       anymatch: 3.1.3
       fb-watchman: 2.0.4
       fdir: 6.5.0(picomatch@4.0.7)
@@ -14125,7 +14125,7 @@ snapshots:
     dependencies:
       '@jest/expect-utils': 30.5.2
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       jest-util: 30.5.1
 
   jest-regex-util@30.5.0: {}
@@ -14155,7 +14155,7 @@ snapshots:
       '@jest/test-result': 30.5.2
       '@jest/transform': 30.5.2(supports-color@8.1.1)
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       emittery: 0.13.1
       exit-x: 0.2.2
@@ -14183,7 +14183,7 @@ snapshots:
       '@jest/test-result': 30.5.2
       '@jest/transform': 30.5.2(supports-color@8.1.1)
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       cjs-module-lexer: 2.3.0
       collect-v8-coverage: 1.0.3
@@ -14231,7 +14231,7 @@ snapshots:
   jest-util@30.5.1:
     dependencies:
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       chalk: 4.1.2
       ci-info: 4.5.0
       graceful-fs: 4.2.12
@@ -14250,7 +14250,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 30.5.2
       '@jest/types': 30.5.1
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       ansi-escapes: 4.3.2
       chalk: 4.1.2
       emittery: 0.13.1
@@ -14259,18 +14259,18 @@ snapshots:
 
   jest-worker@30.5.1:
     dependencies:
-      '@types/node': 26.6.7
+      '@types/node': 26.6.10
       '@ungap/structured-clone': 1.4.0
       jest-util: 30.5.1
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
-  jest@30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
+  jest@30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
     dependencies:
       '@jest/core': 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
       '@jest/types': 30.5.1
       import-local: 3.2.0
-      jest-cli: 30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest-cli: 30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -14278,12 +14278,12 @@ snapshots:
       - supports-color
       - ts-node
 
-  jest@30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
+  jest@30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1):
     dependencies:
       '@jest/core': 30.5.2(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
       '@jest/types': 30.5.1
       import-local: 3.2.0
-      jest-cli: 30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest-cli: 30.5.2(@types/node@26.6.11)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
     transitivePeerDependencies:
       - '@types/node'
       - babel-plugin-macros
@@ -15052,7 +15052,7 @@ snapshots:
       - babel-plugin-macros
     optional: true
 
-  next@16.4.6(@babel/core@8.1.3)(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
+  next@16.4.6(@babel/core@8.1.3)(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1):
     dependencies:
       '@next/env': 16.4.6
       '@swc/helpers': 0.5.23
@@ -15071,7 +15071,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.4.6
       '@next/swc-win32-arm64-msvc': 16.4.6
       '@next/swc-win32-x64-msvc': 16.4.6
-      sharp: 0.35.5(@types/node@26.6.7)
+      sharp: 0.35.5(@types/node@26.6.10)
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
@@ -16117,6 +16117,40 @@ snapshots:
     dependencies:
       kind-of: 6.0.3
 
+  sharp@0.35.5(@types/node@26.6.10):
+    dependencies:
+      '@img/colour': 1.1.0
+      detect-libc: 2.1.2
+      semver: 7.8.6
+    optionalDependencies:
+      '@img/sharp-darwin-arm64': 0.35.5
+      '@img/sharp-darwin-x64': 0.35.5
+      '@img/sharp-freebsd-wasm32': 0.35.5
+      '@img/sharp-libvips-darwin-arm64': 1.3.4
+      '@img/sharp-libvips-darwin-x64': 1.3.4
+      '@img/sharp-libvips-linux-arm': 1.3.4
+      '@img/sharp-libvips-linux-arm64': 1.3.4
+      '@img/sharp-libvips-linux-ppc64': 1.3.4
+      '@img/sharp-libvips-linux-riscv64': 1.3.4
+      '@img/sharp-libvips-linux-s390x': 1.3.4
+      '@img/sharp-libvips-linux-x64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
+      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
+      '@img/sharp-linux-arm': 0.35.5
+      '@img/sharp-linux-arm64': 0.35.5
+      '@img/sharp-linux-ppc64': 0.35.5
+      '@img/sharp-linux-riscv64': 0.35.5
+      '@img/sharp-linux-s390x': 0.35.5
+      '@img/sharp-linux-x64': 0.35.5
+      '@img/sharp-linuxmusl-arm64': 0.35.5
+      '@img/sharp-linuxmusl-x64': 0.35.5
+      '@img/sharp-webcontainers-wasm32': 0.35.5
+      '@img/sharp-win32-arm64': 0.35.5
+      '@img/sharp-win32-ia32': 0.35.5
+      '@img/sharp-win32-x64': 0.35.5
+      '@types/node': 26.6.10
+    optional: true
+
   sharp@0.35.5(@types/node@26.6.11):
     dependencies:
       '@img/colour': 1.1.0
@@ -16149,40 +16183,6 @@ snapshots:
       '@img/sharp-win32-ia32': 0.35.5
       '@img/sharp-win32-x64': 0.35.5
       '@types/node': 26.6.11
-    optional: true
-
-  sharp@0.35.5(@types/node@26.6.7):
-    dependencies:
-      '@img/colour': 1.1.0
-      detect-libc: 2.1.2
-      semver: 7.8.6
-    optionalDependencies:
-      '@img/sharp-darwin-arm64': 0.35.5
-      '@img/sharp-darwin-x64': 0.35.5
-      '@img/sharp-freebsd-wasm32': 0.35.5
-      '@img/sharp-libvips-darwin-arm64': 1.3.4
-      '@img/sharp-libvips-darwin-x64': 1.3.4
-      '@img/sharp-libvips-linux-arm': 1.3.4
-      '@img/sharp-libvips-linux-arm64': 1.3.4
-      '@img/sharp-libvips-linux-ppc64': 1.3.4
-      '@img/sharp-libvips-linux-riscv64': 1.3.4
-      '@img/sharp-libvips-linux-s390x': 1.3.4
-      '@img/sharp-libvips-linux-x64': 1.3.4
-      '@img/sharp-libvips-linuxmusl-arm64': 1.3.4
-      '@img/sharp-libvips-linuxmusl-x64': 1.3.4
-      '@img/sharp-linux-arm': 0.35.5
-      '@img/sharp-linux-arm64': 0.35.5
-      '@img/sharp-linux-ppc64': 0.35.5
-      '@img/sharp-linux-riscv64': 0.35.5
-      '@img/sharp-linux-s390x': 0.35.5
-      '@img/sharp-linux-x64': 0.35.5
-      '@img/sharp-linuxmusl-arm64': 0.35.5
-      '@img/sharp-linuxmusl-x64': 0.35.5
-      '@img/sharp-webcontainers-wasm32': 0.35.5
-      '@img/sharp-win32-arm64': 0.35.5
-      '@img/sharp-win32-ia32': 0.35.5
-      '@img/sharp-win32-x64': 0.35.5
-      '@types/node': 26.6.7
     optional: true
 
   shebang-command@2.0.0:
@@ -16650,12 +16650,12 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  ts-jest@29.4.15(@babel/core@7.29.13(supports-color@8.1.1))(@jest/transform@30.5.2(supports-color@8.1.1))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1))(typescript@6.0.3):
+  ts-jest@29.4.15(@babel/core@7.29.13(supports-color@8.1.1))(@jest/transform@30.5.2(supports-color@8.1.1))(@jest/types@30.5.1)(babel-jest@30.5.2(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(esbuild@0.28.2)(jest-util@30.5.1)(jest@30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1))(typescript@6.0.3):
     dependencies:
       bs-logger: 0.2.6
       fast-json-stable-stringify: 2.1.0
       handlebars: 4.7.10
-      jest: 30.5.2(@types/node@26.6.7)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
+      jest: 30.5.2(@types/node@26.6.10)(babel-plugin-macros@3.1.0)(supports-color@8.1.1)
       json5: 2.2.3
       lodash.memoize: 4.1.2
       make-error: 1.3.6
